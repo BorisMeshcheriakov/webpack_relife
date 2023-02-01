@@ -1,3 +1,12 @@
+$background: #4198c5;
+
 .app {
   color: #fff;
+}
+
+.header {
+  font-family: 'SFPro-regular';
+  padding: 20px;
+  background-color: $background;
+  font-size: 28px;
 }
