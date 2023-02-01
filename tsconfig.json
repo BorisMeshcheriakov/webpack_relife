@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "react-jsx",
     "strict": true,
-    "baseUrl": ".",
+    "baseUrl": "src/",
     "allowJs": true,
     "outDir": "dist",
     "sourceMap": true,
