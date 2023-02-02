@@ -47,8 +47,10 @@
   },
   "browserslist": [
     "> 5%",
-    "not dead",
-    "not IE < 11"
+    "last 2 versions",
+    "safari >= 13.1.2",
+    "not op_mini all",
+    "not dead"
   ],
   "dependencies": {
     "@types/react": "^18.0.17",
