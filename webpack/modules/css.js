@@ -11,7 +11,13 @@ const { config } = require('../configuration');
 
 const cssLoader = {
   loader: 'css-loader',
-  options: { sourceMap: true, importLoaders: 1, modules: true },
+  options: {
+    sourceMap: true,
+    importLoaders: 1,
+    modules: {
+      localIdentName: '[local]_[hash:base64:5]',
+    },
+  },
 };
 
 const postcssLoader = {
