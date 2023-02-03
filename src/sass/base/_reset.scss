@@ -1,8 +1,11 @@
+@use '../abstracts/variables';
+
 body {
   padding: 0;
   margin: 0;
-  font-family: 'SFPro-Regular';
-  font-size: 1rem;
+  font-family: 'Regular';
+  font-size: variables.$font-medium;
+  background: variables.$color-background;
 }
 
 *,
@@ -47,11 +50,17 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-size: inherit;
   font-weight: inherit;
+}
+
+h1 {
+  font-size: variables.$font-large;
 }
 
 p {
   margin: 0;
+  font-size: inherit;
 }
 
 cite {
