@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Footer } from './components';
+
 import st from './App.scss';
 
 const App: React.FC = () => {
@@ -12,13 +14,20 @@ const App: React.FC = () => {
           cumque iste nam, minima nisi mollitia nulla cupiditate. Aliquam.
         </h1>
       </header>
-
-      <h1>H1 header</h1>
-      <h2>H2 header</h2>
-      <h3>H3 header</h3>
-      <h4>H4 header</h4>
-      <h5>H5 header</h5>
-      <h6>H6 header</h6>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti, dolore beatae
+          sit atque aliquam eius asperiores iste adipisci cupiditate aperiam praesentium vero. At
+          fuga suscipit nulla a? Laboriosam, dolores.
+        </p>
+        <p>
+          <button>Button</button>
+        </p>
+        <p>
+          <a href="">Link</a>
+        </p>
+      </div>
+      <Footer />
     </div>
   );
 };

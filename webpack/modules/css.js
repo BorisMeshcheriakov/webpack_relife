@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 
 // Import Configuration.
-const { config } = require('../configuration');
+const { config, paths } = require('../configuration');
 
 /**
  * Default modules loader for CSS.
@@ -41,6 +41,11 @@ const css = {
     sassLoader,
   ],
   exclude: /node_modules/,
+  resolve: {
+    alias: {
+      '@sass': paths.sass,
+    },
+  },
 };
 
 module.exports = css;
