@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { lazy } from 'react';
 
-import { Footer } from './components';
+// import { Footer } from './components';
+const Footer = lazy(() => import('./components/Footer'));
 
 import st from './App.scss';
 

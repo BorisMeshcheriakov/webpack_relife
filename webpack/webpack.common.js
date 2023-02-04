@@ -41,12 +41,19 @@ const resolve = {
 	},
 };
 
+const optimization = {
+	splitChunks: {
+		chunks: 'all',
+	},
+};
+
 /**
  * Webpack common configuration.
  */
 module.exports = {
 	entry,
 	output,
+	optimization,
 	plugins,
 	resolve,
 	module: modules,

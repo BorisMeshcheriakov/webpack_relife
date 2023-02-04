@@ -1,9 +1,14 @@
+import { getMonth } from 'date-fns';
 import React from 'react';
 
 import st from './Footer.module.scss';
 
 const Footer: React.FC = () => {
-  return <footer className={st.footer}>Footer</footer>;
+	const getCurrentMonth = () => {
+		const date = new Date();
+		return getMonth(date);
+	};
+	return <footer className={st.footer}>{getCurrentMonth()}</footer>;
 };
 
 export default Footer;
