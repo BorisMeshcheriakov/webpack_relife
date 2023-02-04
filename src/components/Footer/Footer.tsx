@@ -8,7 +8,11 @@ const Footer: React.FC = () => {
 		const date = new Date();
 		return getMonth(date);
 	};
-	return <footer className={st.footer}>{getCurrentMonth()}</footer>;
+	return (
+		<footer role="footer" className={st.footer}>
+			{getCurrentMonth()}
+		</footer>
+	);
 };
 
 export default Footer;
