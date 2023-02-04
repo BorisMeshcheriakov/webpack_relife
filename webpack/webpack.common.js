@@ -12,10 +12,10 @@ const entry = [`${paths.src}/index.tsx`, `${paths.src}/index.scss`];
  * Set output file name and path.
  */
 const output = {
-  publicPath: '/',
-  path: paths.build,
-  filename: config.JS_FILE_OUTPUT,
-  clean: true,
+	publicPath: '/',
+	path: paths.build,
+	filename: config.JS_FILE_OUTPUT,
+	clean: true,
 };
 
 /**
@@ -27,7 +27,7 @@ const plugins = [htmlWebpackPlugin];
  * Shared modules.
  */
 const modules = {
-  rules: [fonts, babel, typeScript, css],
+	rules: [fonts, babel, typeScript, css],
 };
 
 /**
@@ -35,22 +35,22 @@ const modules = {
  * Alias for @ set to paths.src directory.
  */
 const resolve = {
-  extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
-  alias: {
-    '@': paths.src,
-  },
+	extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+	alias: {
+		'@': paths.src,
+	},
 };
 
 /**
  * Webpack common configuration.
  */
 module.exports = {
-  entry,
-  output,
-  plugins,
-  resolve,
-  module: modules,
-  context: __dirname,
-  target: config.IS_DEV ? 'web' : 'browserslist',
-  mode: config.IS_DEV ? 'development' : 'production',
+	entry,
+	output,
+	plugins,
+	resolve,
+	module: modules,
+	context: __dirname,
+	target: config.IS_DEV ? 'web' : 'browserslist',
+	mode: config.IS_DEV ? 'development' : 'production',
 };
