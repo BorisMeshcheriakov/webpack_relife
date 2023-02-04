@@ -1,7 +1,7 @@
 {
 	"name": "webpack_boilerplate",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "src",
 	"repository": "https://github.com/BorisMeshcheriakov/webpack_guides.git",
 	"author": "BorisMeshcheriakov <incarnate6@gmail.com>",
 	"license": "MIT",

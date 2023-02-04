@@ -2,12 +2,12 @@
 	"compilerOptions": {
 		"jsx": "react-jsx",
 		"strict": true,
-		"baseUrl": "src/",
+		"baseUrl": "src",
 		"allowJs": true,
 		"outDir": "dist",
 		"sourceMap": true,
 		"module": "esnext",
-		"target": "ES2015",
+		"target": "es5",
 		"skipLibCheck": true,
 		"lib": ["ES6", "DOM"],
 		"noImplicitAny": true,
@@ -16,9 +16,10 @@
 		"importsNotUsedAsValues": "preserve",
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
+		"plugins": [{ "name": "typescript-plugin-css-modules" }],
 		"typeRoots": ["node_modules/@types", "src/@types"],
 		"paths": {
-			"@/*": ["src/*"]
+			"@src/*": ["/*"]
 		}
 	},
 	"exclude": ["node_modules", "public", "webpack", "config", "coverage"]

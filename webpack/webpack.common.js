@@ -6,7 +6,7 @@ const { typeScript, css, babel, fonts } = require('./modules');
 /**
  * Entry point for the bundle.
  */
-const entry = [`${paths.src}/index.tsx`, `${paths.src}/index.scss`];
+const entry = [`${paths.src}/index.tsx`];
 
 /**
  * Set output file name and path.
@@ -32,12 +32,12 @@ const modules = {
 
 /**
  * Resolve extensions.
- * Alias for @ set to paths.src directory.
+ * Alias for @src set to paths.src directory.
  */
 const resolve = {
 	extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
 	alias: {
-		'@': paths.src,
+		'@src': paths.src,
 	},
 };
 
