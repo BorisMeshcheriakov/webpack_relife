@@ -1,7 +1,8 @@
-import React, { lazy } from 'react';
+import React, { lazy, Suspense } from 'react';
+import { Close } from 'shared/assets';
 
 // import { Footer } from './components';
-// const Footer = lazy(() => import('./components/Footer'));
+const Footer = lazy(() => import('./components/Footer'));
 
 import st from './App.scss';
 
@@ -28,7 +29,10 @@ const App: React.FC = () => {
 					<a href="">Link</a>
 				</p>
 			</div>
-			{/* <Footer /> */}
+			<Close />
+			<Suspense fallback={<span>loading</span>}>
+				<Footer />
+			</Suspense>
 		</div>
 	);
 };

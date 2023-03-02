@@ -36,6 +36,7 @@ const modules = {
  */
 const resolve = {
 	extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+	preferRelative: true,
 	alias: {
 		'@src': paths.src,
 	},
