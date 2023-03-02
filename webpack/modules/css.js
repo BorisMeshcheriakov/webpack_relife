@@ -31,7 +31,12 @@ const postcssLoader = {
 	},
 };
 
-const sassLoader = { loader: 'sass-loader', options: { sourceMap: true } };
+const sassLoader = {
+	loader: 'sass-loader',
+	options: {
+		sourceMap: true,
+	},
+};
 
 const css = {
 	test: /\.(sass|scss|css)$/,

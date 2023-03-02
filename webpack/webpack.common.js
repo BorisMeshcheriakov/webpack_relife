@@ -27,7 +27,7 @@ const plugins = [htmlWebpackPlugin];
  * Shared modules.
  */
 const modules = {
-	rules: [fonts, esbuild, css],
+	rules: [fonts, css, esbuild],
 };
 
 /**
@@ -35,10 +35,11 @@ const modules = {
  * Alias for @src set to paths.src directory.
  */
 const resolve = {
-	extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+	extensions: ['.js', '.jsx', '.json', '.ts', '.tsx', 'scss'],
 	preferRelative: true,
 	alias: {
 		'@src': paths.src,
+		'@styles': paths.styles,
 	},
 };
 

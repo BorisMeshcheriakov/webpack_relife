@@ -1,1 +1,6 @@
-@use 'sass/main';
+@use '@styles/main';
+
+:root {
+	font-family: Regular;
+	color: main.$color-blue;
+}

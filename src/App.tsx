@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Close } from 'shared/assets';
 
-// import { Footer } from './components';
 const Footer = lazy(() => import('./components/Footer'));
 
 import st from './App.scss';
