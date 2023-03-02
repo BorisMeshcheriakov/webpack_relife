@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 
 // import { Footer } from './components';
-const Footer = lazy(() => import('./components/Footer'));
+// const Footer = lazy(() => import('./components/Footer'));
 
 import st from './App.scss';
 
@@ -28,7 +28,7 @@ const App: React.FC = () => {
 					<a href="">Link</a>
 				</p>
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 };

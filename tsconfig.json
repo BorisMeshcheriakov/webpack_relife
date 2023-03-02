@@ -18,9 +18,11 @@
 		"forceConsistentCasingInFileNames": true,
 		"plugins": [{ "name": "typescript-plugin-css-modules" }],
 		"typeRoots": ["node_modules/@types", "src/@types"],
+		"types": ["node", "jest", "@testing-library/jest-dom"],
 		"paths": {
 			"@src/*": ["/*"]
 		}
 	},
+	"include": ["src"],
 	"exclude": ["node_modules", "public", "webpack", "config", "coverage"]
 }
