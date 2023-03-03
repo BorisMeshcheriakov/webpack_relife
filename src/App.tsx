@@ -6,6 +6,11 @@ const Footer = lazy(() => import('./components/Footer'));
 import st from './App.scss';
 
 const App: React.FC = () => {
+	React.useEffect(() => {
+		const test = () => fetch('/api/v1/common/module/', { method: 'GET' });
+		test();
+	}, []);
+
 	return (
 		<div className={st.app}>
 			<header className={st.header}>
