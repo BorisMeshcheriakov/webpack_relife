@@ -21,7 +21,7 @@ const devServer = {
 	static: [
 		{
 			watch: true,
-			directory: paths.dist,
+			directory: paths.public,
 		},
 	],
 };
