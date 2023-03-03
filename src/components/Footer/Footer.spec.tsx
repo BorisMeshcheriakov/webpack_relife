@@ -5,5 +5,5 @@ import '@testing-library/jest-dom/extend-expect';
 test('Footer loaded', () => {
 	render(<Footer />);
 
-	expect(screen.getByRole('footer')).toHaveTextContent('1');
+	expect(screen.getByRole('footer')).toHaveTextContent('2');
 });
