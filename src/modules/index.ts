@@ -2,7 +2,7 @@ export { default as Header } from './Header';
 export { default as RootModal } from './RootModal';
 export { default as Authentication } from './Authentication';
 export { default as Main } from './Main';
-// export { default as Shop } from './Shop';
+//export { default as Shop } from './Shop';
 // export { default as Events } from './Events';
 // export { default as TechService } from './TechService';
 // export { default as PaymentListener } from './PaymentListener';

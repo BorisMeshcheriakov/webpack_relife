@@ -1,0 +1,30 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.button {
+	height: 32px;
+	max-height: 32px;
+	border-radius: 4px;
+
+	&.option {
+		min-width: 32px;
+		padding: 0 8px;
+		border: 1px solid $border;
+		white-space: nowrap;
+		@include flexRowCenter;
+
+		&.active {
+			border: 1px solid $blue;
+			color: $blue;
+		}
+
+		&.highlight {
+			border: 1px solid $red;
+		}
+
+		&.disabled {
+			display: none;
+			opacity: 0.3;
+		}
+	}
+}

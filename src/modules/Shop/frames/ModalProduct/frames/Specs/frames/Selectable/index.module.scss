@@ -1,0 +1,55 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.selectable {
+	position: relative;
+	display: grid;
+	grid-template-columns: 115px 1fr;
+	align-items: start;
+
+	&__title {
+		@include flex;
+
+		align-self: start;
+		height: 32px;
+		margin: 5px 0;
+	}
+
+	&__options {
+		@include flex;
+
+		flex-wrap: wrap;
+
+		input[type='radio'] {
+			display: none;
+			visibility: hidden;
+		}
+
+		label {
+			margin: 5px;
+			cursor: pointer;
+		}
+	}
+
+	&.withTable {
+		grid-template-columns: 115px 1fr 1fr;
+	}
+}
+
+.disabled {
+	display: none;
+	visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+	.selectable {
+		&__options {
+			justify-content: flex-end;
+		}
+
+		&.withTable {
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 115px 1fr;
+		}
+	}
+}

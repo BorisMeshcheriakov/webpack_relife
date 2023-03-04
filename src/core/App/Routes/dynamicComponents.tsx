@@ -1,5 +1,5 @@
 import {
-	// 	Shop,
+	//Shop,
 	Statistics,
 	// 	Events,
 	// 	Programs,

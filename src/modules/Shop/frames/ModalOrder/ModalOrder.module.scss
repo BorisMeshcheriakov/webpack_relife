@@ -1,0 +1,44 @@
+$top-position: 25px;
+
+.container {
+	padding: 0 20px 40px 20px;
+	max-height: calc(100% - 84px);
+	overflow-y: scroll;
+}
+
+.status {
+	position: absolute;
+	right: 20px;
+	top: $top-position;
+}
+
+.products {
+	display: grid;
+	grid-row-gap: 14px;
+	margin-bottom: 14px;
+}
+
+.id {
+	position: absolute;
+	top: $top-position;
+	color: #4198c5;
+}
+
+.buttons {
+	margin-top: 14px;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		margin-top: 20px;
+	}
+
+	.id {
+		top: 55px;
+	}
+	.status {
+		top: 55px;
+	}
+}

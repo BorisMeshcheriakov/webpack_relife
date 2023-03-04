@@ -1,0 +1,18 @@
+.storage {
+	span {
+		margin-left: 10px;
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.storage {
+		align-self: flex-end;
+		height: 21px;
+		margin-top: 10px;
+
+		span {
+			margin-left: 0;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+@import 'resources/branding/colors';
+
+.tabs {
+	display: flex;
+	height: 50px;
+}
+
+.tab {
+	position: relative;
+	font-size: 14px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	color: $dark_grey;
+
+	&:hover,
+	&.active {
+		color: $blue;
+	}
+
+	&:after {
+		display: block;
+		position: absolute;
+		top: 16px;
+		right: 0;
+		content: '';
+		width: 2px;
+		height: 18px;
+		background-color: $border;
+	}
+
+	&:last-child {
+		&:after {
+			display: none;
+		}
+	}
+}

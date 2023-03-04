@@ -1,0 +1,84 @@
+@import 'resources/branding/colors.scss';
+
+.shop {
+	position: relative;
+	height: 100%;
+}
+
+.toolbar {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px 0 15px;
+	transition: display 0.5s;
+
+	&:last-child {
+		display: none;
+		height: 42px;
+		padding-bottom: 8px;
+	}
+
+	&__tabs {
+		display: flex;
+		height: 34px;
+		min-width: 125px;
+	}
+	&__buttons {
+		display: flex;
+		height: 34px;
+
+		& > * {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.workspace {
+	position: relative;
+	height: calc(100vh - 150px);
+	overflow-y: scroll;
+}
+
+.tab {
+	display: flex;
+	align-items: center;
+	padding: 0 7px;
+	color: $dark_grey;
+
+	&.active {
+		color: $blue;
+	}
+}
+
+@keyframes visible {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.show {
+		&.open {
+			display: none;
+		}
+	}
+	.header {
+		&:last-child {
+			&.search {
+				animation: visible 1s ease;
+				display: block !important;
+			}
+		}
+	}
+}

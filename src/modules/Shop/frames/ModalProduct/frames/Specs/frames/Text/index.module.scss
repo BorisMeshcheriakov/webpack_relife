@@ -1,0 +1,8 @@
+.text {
+	height: 32px;
+	display: flex;
+
+	&__title {
+		flex: 0 0 120px;
+	}
+}

@@ -1,0 +1,40 @@
+@import 'resources/branding/colors';
+
+.image {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	&__promo {
+		max-width: 256px;
+		object-fit: contain;
+	}
+}
+
+.video {
+	position: absolute;
+	left: 10px;
+	bottom: 5px;
+	width: 80px;
+	height: 34px;
+	border-radius: 20px;
+	background-color: $bgrey;
+	color: $dark_grey;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 13px;
+	font-size: 10px;
+
+	&:hover {
+		background-color: $blue;
+		color: #fff;
+
+		svg {
+			path {
+				fill: #fff;
+				stroke: #fff;
+			}
+		}
+	}
+}

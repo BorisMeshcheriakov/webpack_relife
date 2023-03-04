@@ -1,0 +1,19 @@
+.products {
+	margin: 10px 20px 20px;
+
+	&.cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 276px);
+		row-gap: 12px;
+		column-gap: 12px;
+		justify-content: start;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.products {
+		&.cards {
+			justify-content: center;
+		}
+	}
+}

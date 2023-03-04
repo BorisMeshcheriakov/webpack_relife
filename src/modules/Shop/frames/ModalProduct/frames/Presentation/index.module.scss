@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13px;
+    color: #616F82;
+    font-weight: 300;
+    margin-top: 1px;
+    margin-right: 6px;
+
+    .icon{
+        margin-left: 10px;
+    }
+}

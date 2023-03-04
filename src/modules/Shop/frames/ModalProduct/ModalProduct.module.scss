@@ -1,0 +1,118 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.product {
+	padding: 0 20px 67px;
+	overflow-y: scroll;
+}
+
+.card {
+	display: flex;
+	flex: 0 0 288px;
+	padding: 24px 21px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px rgb(19 19 19 / 10%);
+
+	&__image {
+		position: relative;
+		display: flex;
+		flex: 0 1 256px;
+	}
+
+	&__data {
+		display: grid;
+
+		// display: flex;
+		// flex-direction: column;
+		flex-grow: 1;
+		row-gap: 10px;
+		padding: 0 31px;
+	}
+
+	&__specs {
+		display: grid;
+		flex-grow: 1;
+		row-gap: 10px;
+	}
+
+	&__quantity {
+		display: grid;
+		grid-template-columns: 115px 150px 1fr;
+		grid-column-gap: 5px;
+		align-items: center;
+		white-space: nowrap;
+	}
+
+	&__add {
+		width: 128px;
+		height: 38px;
+		border: 1px solid black;
+	}
+
+	&__buy {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.buttons {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.data {
+	flex: 1 0 auto;
+	padding: 23px 21px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px rgb(19 19 19 / 10%);
+}
+
+.video {
+	position: absolute;
+	bottom: 16px;
+	left: 0;
+	height: 34px;
+	padding: 0 13px;
+	font-size: 10px;
+	color: #616f82;
+	background: #f1f2f4;
+	border-radius: 20px;
+}
+
+.spinner {
+	width: 100%;
+	height: 100%;
+	@include flexRowCenter;
+}
+
+@media screen and (max-width: 1024px) {
+	.card {
+		display: grid;
+		row-gap: 20px;
+		padding: 5px;
+
+		&__image {
+			justify-content: center;
+		}
+
+		&__data {
+			display: grid;
+			row-gap: 10px;
+			padding: 0;
+			overflow-x: scroll;
+		}
+
+		&__quantity {
+			grid-template-columns: 1fr auto;
+			margin-right: 5px;
+		}
+
+		&__buy {
+			flex-wrap: wrap;
+		}
+	}
+}
