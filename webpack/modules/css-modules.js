@@ -1,22 +1,17 @@
-// Import dependencies.
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 
-// Import Configuration.
 const { config } = require('../configuration');
-
-/**
- * Default modules loader for CSS.
- */
 
 const cssLoader = {
 	loader: 'css-loader',
 	options: {
 		sourceMap: true,
+		modules: true,
 		importLoaders: 1,
 		modules: {
 			localIdentName: '[local]_[hash:base64:5]',
-			mode: 'icss',
+			mode: 'local',
 		},
 	},
 };
@@ -38,9 +33,8 @@ const sassLoader = {
 	},
 };
 
-const css = {
-	test: /\.(sass|scss|css)$/,
-	exclude: /\.module\.scss$/i,
+const cssModules = {
+	test: /\.module\.scss$/i,
 	use: [
 		config.IS_DEV ? 'style-loader' : MiniCssExtractPlugin.loader,
 		cssLoader,
@@ -49,4 +43,4 @@ const css = {
 	],
 };
 
-module.exports = css;
+module.exports = cssModules;

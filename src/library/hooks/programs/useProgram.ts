@@ -44,7 +44,7 @@ const useProgram = (id?: string, isAuthor?: boolean) => {
 			let dayVideos = days.map((day) => day.exercises);
 			video = video.concat(...dayVideos).filter((video) => video.visible);
 		} else {
-			video = program.videos ? ([...program.videos] as ProgramVideo[]) : [];
+			return program.videos ? program.videos : [];
 		}
 		return video;
 	};

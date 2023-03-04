@@ -1,8 +1,9 @@
 /// const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { htmlWebpackPlugin } = require('./plugins');
 const { paths, config } = require('./configuration');
-const { typeScript, css, babel, assets, esbuild } = require('./modules');
-
+const { typeScript, css, babel, assets, esbuild, cssModules } = require('./modules');
+const path = require('path');
+require('../node_modules/react-phone-number-input/');
 /**
  * Entry point for the bundle.
  */
@@ -27,7 +28,7 @@ const plugins = [htmlWebpackPlugin];
  * Shared modules.
  */
 const modules = {
-	rules: [babel, typeScript, assets, css],
+	rules: [esbuild, css, cssModules, assets],
 };
 
 /**
@@ -50,6 +51,7 @@ const resolve = {
 		'react/jsx-runtime': 'react/jsx-runtime.js',
 		'react/jsx-dev-runtime': 'react/jsx-dev-runtime.js',
 	},
+	modules: ['node_modules'],
 };
 
 const optimization = {

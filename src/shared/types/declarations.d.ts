@@ -3,7 +3,17 @@ declare module '*.scss' {
 	export = content;
 }
 
+declare module '*.module.scss' {
+	const content: { [className: string]: string };
+	export = content;
+}
+
 declare module '*.svg' {
+	const content: any;
+	export = content;
+}
+
+declare module '*.css' {
 	const content: any;
 	export = content;
 }
