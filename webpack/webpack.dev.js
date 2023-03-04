@@ -9,8 +9,9 @@ const devServer = {
 	port: config.PORT,
 	host: config.HOST,
 	hot: true,
+	historyApiFallback: { index: '/', disableDotRule: true },
 	proxy: {
-		context: ['/api', '/media'],
+		context: ['/api/**', '/media/**'],
 		target: 'https://api-relife.nicecode.biz/',
 		changeOrigin: true,
 	},
