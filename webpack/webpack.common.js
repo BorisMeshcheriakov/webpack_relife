@@ -40,6 +40,8 @@ const resolve = {
 	alias: {
 		'@src': paths.src,
 		'@styles': paths.styles,
+		core: paths.core,
+		library: paths.library,
 	},
 };
 
