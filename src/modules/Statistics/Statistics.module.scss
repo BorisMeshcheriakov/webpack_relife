@@ -1,0 +1,23 @@
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
+	max-width: 1280px;
+	height: calc(100vh - 50px);
+	max-height: calc(100vh - 50px);
+	margin: 0 auto;
+
+	.main {
+		position: relative;
+		height: calc(100vh - 150px);
+		overflow-y: scroll;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.container {
+		max-width: 1180px;
+	}
+}

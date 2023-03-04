@@ -16,7 +16,7 @@ export { default as Loading } from './Loading';
 // export { default as Specialists } from './Specialists';
 // export { default as Notifications } from './Notifications';
 // export { default as ProgramPayment } from './ProgramPayment';
-// export { default as Statistics } from './Statistics';
+export { default as Statistics } from './Statistics';
 // export { default as AdminPanel } from './AdminPanel';
 
 export * from './Support';

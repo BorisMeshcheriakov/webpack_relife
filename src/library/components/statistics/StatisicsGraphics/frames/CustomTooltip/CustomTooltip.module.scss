@@ -1,0 +1,36 @@
+@import 'resources/branding/colors';
+
+.wrap {
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 61px;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0 0 16px rgb(51 51 51 / 20%);
+
+	.count {
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 18px;
+	}
+
+	.date {
+		font-size: 13px;
+		line-height: 22px;
+	}
+
+	.triangle {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 16px;
+		height: 16px;
+		background-color: white;
+		box-shadow: 10px 10px 16px rgb(51 51 51 / 20%);
+		transform: translateY(50%) translateX(-75%) rotate(45deg);
+	}
+}

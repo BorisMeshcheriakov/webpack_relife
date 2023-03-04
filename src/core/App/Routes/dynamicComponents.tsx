@@ -1,19 +1,19 @@
-// import {
-// 	Shop,
-// 	Statistics,
-// 	Events,
-// 	Programs,
-// 	Clients,
-// 	Schedules,
-// 	Specialists,
-// 	AdminPanel,
-// } from 'modules';
+import {
+	// 	Shop,
+	Statistics,
+	// 	Events,
+	// 	Programs,
+	// 	Clients,
+	// 	Schedules,
+	// 	Specialists,
+	// 	AdminPanel,
+} from 'modules';
 
 export const components = [
-	// {
-	// 	type: 'statistics',
-	// 	component: Statistics,
-	// },
+	{
+		type: 'statistics',
+		component: Statistics,
+	},
 	// {
 	// 	type: 'store',
 	// 	component: Shop,

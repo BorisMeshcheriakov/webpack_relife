@@ -1,11 +1,10 @@
 const babel = {
-	test: /\.(js|jsx)$/,
+	test: /\.(mjs|js|jsx)$/,
 	exclude: /node_modules/,
-
 	use: {
 		loader: 'babel-loader',
 		options: {
-			presets: ['@babel/react', '@babel/preset-env', '@babel/preset-typescript'],
+			presets: ['@babel/react', '@babel/preset-env'],
 		},
 	},
 };

@@ -13,7 +13,7 @@ import {
 	// ProgramPayment,
 } from 'modules';
 import { components } from './dynamicComponents';
-// import { ProtectedRoute } from 'library/components/common';
+import { ProtectedRoute } from 'library/components/common';
 
 import { selectModules, selectModulesLoading } from 'library/redux/common';
 import { useAppSelector } from 'library/hooks/common/reduxTypedHooks';
@@ -50,7 +50,7 @@ const Routes = () => {
 			<RootModal />
 
 			<Switch>
-				{/* {modules.map((module) => {
+				{modules.map((module) => {
 					const component = components.find((component) => component.type === module.settings.type);
 					if (component) {
 						const Component = component.component;
@@ -63,7 +63,7 @@ const Routes = () => {
 						);
 					}
 					return <Route key={module.code} path={`/${module.code}`} render={() => <NotFound />} />;
-				})} */}
+				})}
 
 				{/**
 				 * Если в глобальных настройках для лого указана ссылка перехода

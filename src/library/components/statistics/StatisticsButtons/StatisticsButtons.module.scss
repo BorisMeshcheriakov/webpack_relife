@@ -1,0 +1,13 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  min-width: 68px;
+
+  .btn {
+    transition: 0.3s;
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import 'resources/branding/colors.scss';
+
+.card {
+	width: 560px;
+	height: 250px;
+	background: #ffffff;
+	box-shadow: 0px 1px 4px rgba(19, 19, 19, 0.1);
+	border-radius: 4px;
+	transition: 0.2s;
+
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: 0 2px 16px 0 rgb(34 34 34 / 14%);
+	}
+
+	.link {
+		z-index: 5;
+		cursor: pointer;
+	}
+
+	.info {
+		padding: 20px 24px 10px;
+		display: flex;
+		justify-content: space-between;
+
+		.wrap {
+			.title {
+				font-size: 16px;
+				line-height: 19px;
+				margin-bottom: 15px;
+			}
+			.count {
+				font-weight: 500;
+				font-size: 28px;
+				line-height: 33px;
+			}
+		}
+		.amount {
+			font-size: 28px;
+			line-height: 33px;
+			padding-top: 2px;
+			max-width: 230px;
+
+			&.green {
+				color: $green;
+			}
+			&.gray {
+				color: $border;
+			}
+		}
+	}
+
+	.graph {
+		position: relative;
+		height: 133px;
+
+		.svg {
+			height: 110px;
+			svg {
+				cursor: pointer;
+				position: absolute;
+				z-index: 1;
+			}
+			&.hist {
+				svg {
+					top: 5px;
+				}
+			}
+		}
+
+		.border {
+			margin: 0;
+			position: absolute;
+			bottom: 19px;
+			right: 0;
+			width: 100%;
+			height: 10px;
+			background-color: #f9fcff;
+		}
+
+		.helper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #f9fcff;
+			border-radius: 0 0 4px 4px;
+			height: 43px;
+			position: relative;
+			bottom: 0px;
+			color: $dark_grey;
+			padding-bottom: 5px;
+		}
+	}
+}

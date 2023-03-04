@@ -1,0 +1,17 @@
+@import 'resources/branding/colors.scss';
+.tabs {
+	display: flex;
+	height: 34px;
+	align-items: center;
+
+	.tab {
+		display: flex;
+		align-items: center;
+		padding: 0 7px;
+		color: $dark_grey;
+
+		&.active {
+			color: $blue;
+		}
+	}
+}

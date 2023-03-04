@@ -10,7 +10,7 @@ import modals from 'library/redux/modal';
 // import schedules from 'library/redux/schedules';
 // import specialists from 'library/redux/specialists';
 // import notifications from 'library/redux/notifications';
-// import statistics from 'library/redux/statistics';
+import statistics from 'library/redux/statistics';
 // import clients from 'library/redux/clients';
 
 export const store = configureStore({
@@ -25,7 +25,7 @@ export const store = configureStore({
 		// schedules,
 		// specialists,
 		// notifications,
-		// statistics,
+		statistics,
 		// clients,
 	},
 	devTools: process.env.NODE_ENV !== 'production',

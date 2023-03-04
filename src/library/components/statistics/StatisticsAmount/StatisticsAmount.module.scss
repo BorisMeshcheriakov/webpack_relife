@@ -1,0 +1,28 @@
+@import 'resources/branding/colors.scss';
+
+.amount {
+	padding-top: 2px;
+	max-width: 230px;
+
+	&.green {
+		color: $green;
+	}
+	&.gray {
+		color: $border;
+	}
+
+	&.large {
+		font-size: 28px;
+		line-height: 33px;
+	}
+
+	&.medium {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	&.small {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
