@@ -1,0 +1,12 @@
+.wrap {
+	max-height: 860px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px 20px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	.wrap {
+		max-height: calc(100vh - 60px);
+	}
+}

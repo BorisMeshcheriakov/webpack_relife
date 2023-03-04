@@ -1,0 +1,12 @@
+.scroller {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 10px;
+
+  & > button {
+    &:nth-child(7n) {
+      margin-right: 0;
+    }
+  }
+}

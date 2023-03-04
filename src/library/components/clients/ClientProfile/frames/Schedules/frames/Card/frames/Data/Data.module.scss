@@ -1,0 +1,10 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.data {
+	@include flexColumnBetween;
+	p {
+		font-size: 14px;
+		color: $dark_grey;
+	}
+}

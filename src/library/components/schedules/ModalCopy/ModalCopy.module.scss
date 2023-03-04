@@ -1,0 +1,50 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.head {
+	@include flexRowCenter;
+	background-color: $bgrey;
+	height: 50px;
+	border-radius: 4px 4px 0 0;
+}
+
+.body {
+	padding: 20px 30px;
+	&__wrap {
+		border: 1px solid $border;
+		border-radius: 4px;
+		padding: 10px;
+		font-size: 16px;
+		height: 353px;
+
+		& > p {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+.confirm {
+	@include flexColumnCenter;
+
+	&__note {
+		color: $border;
+	}
+
+	&__wrap {
+		padding: 20px;
+	}
+
+	&__btn {
+		border: 1px solid $blue;
+		border-radius: 4px;
+		color: $blue;
+		padding: 10px 20px;
+
+		&:hover {
+			background-color: $blue;
+			color: #fff;
+		}
+	}
+}

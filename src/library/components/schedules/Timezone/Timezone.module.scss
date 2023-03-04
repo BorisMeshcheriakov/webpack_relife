@@ -1,0 +1,28 @@
+.btn {
+	font-size: 14px;
+	color: #616f82;
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		color: #4198c5;
+
+		svg {
+			path {
+				fill: #4198c5;
+			}
+		}
+	}
+}
+
+.menuItem {
+	div {
+		line-height: 5px;
+		font-size: 14px;
+		color: #616f82;
+	}
+
+	a {
+		color: #4198c5;
+	}
+}

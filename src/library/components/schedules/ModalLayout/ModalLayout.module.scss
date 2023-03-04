@@ -1,0 +1,61 @@
+@import 'resources/mixins/elements';
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.modal {
+	padding: 0 20px;
+
+	&__head {
+		@include flexRowCenter;
+		height: 60px;
+	}
+
+	&__title {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	&__submit {
+		position: absolute;
+		right: 20px;
+		font-size: 14px;
+		color: $blue;
+	}
+
+	&__close {
+		position: absolute;
+		right: -40px;
+		top: -10px;
+
+		button {
+			color: #fff;
+		}
+	}
+
+	&__nav {
+		@include flexRowBetween;
+		@include blockShadow;
+		height: 60px;
+		padding: 0 20px;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.modal {
+		&__close {
+			right: auto;
+			left: 20px;
+			top: auto;
+
+			button {
+				background-color: #fff;
+				color: $dark_grey;
+			}
+		}
+	}
+}

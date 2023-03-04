@@ -1,0 +1,23 @@
+.clients {
+	display: flex;
+	height: 100%;
+	padding-top: 30px;
+}
+
+.client {
+	display: flex;
+	flex: 1 1 744px;
+	padding: 0 20px 10px 30px;
+}
+
+@media screen and (max-width: 1024px) {
+	.clients {
+		padding-top: 10px;
+	}
+
+	.client {
+		display: flex;
+		flex: 1 1 744px;
+		padding: 0 10px 0 88px;
+	}
+}

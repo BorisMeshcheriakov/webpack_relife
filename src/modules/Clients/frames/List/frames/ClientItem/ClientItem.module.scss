@@ -1,0 +1,27 @@
+.item {
+	display: flex;
+	flex-grow: 1;
+	cursor: pointer;
+	border-radius: 4px;
+	align-items: center;
+	padding-left: 8px;
+	min-width: 60px;
+
+	&__name {
+		flex: 1 1 200px;
+		padding-left: 10px;
+		min-width: 300px;
+	}
+
+	&__icon {
+		flex: 0 0 40px;
+		display: flex;
+		justify-content: center;
+		color: #4198c5;
+	}
+
+	&:hover,
+	&.active {
+		background-color: #f1f2f4;
+	}
+}

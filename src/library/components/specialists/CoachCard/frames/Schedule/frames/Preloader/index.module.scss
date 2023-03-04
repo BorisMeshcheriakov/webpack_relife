@@ -1,0 +1,37 @@
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 34px;
+  padding-right: 55px;
+}
+
+.week {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.block {
+  width: 37px;
+  height: 20px;
+  border: 1px solid #f1f2f4;
+  background-color: #f1f2f4;
+  animation: opacityAnimation 1s linear alternate infinite;
+  border-radius: 4px;
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0.6
+  }
+
+  100% {
+   opacity: 1;
+  }
+}

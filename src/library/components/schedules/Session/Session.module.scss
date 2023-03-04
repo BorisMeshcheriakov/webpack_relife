@@ -1,0 +1,19 @@
+.session {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+	padding: 0 8px;
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+
+		& > * {
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@import 'resources/mixins/elements';
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.nav {
+	@include blockShadow;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0 15px;
+
+	&__item {
+		display: flex;
+		flex-grow: 1;
+
+		&.content_end {
+			justify-content: flex-end;
+		}
+	}
+
+	&__title {
+		@include flexRowCenter;
+		font-size: 16px;
+		color: $blue;
+	}
+}

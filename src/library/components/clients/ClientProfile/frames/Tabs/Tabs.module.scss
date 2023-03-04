@@ -1,0 +1,46 @@
+.tabs {
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px 0 0;
+
+	&__tabs {
+		overflow-x: auto;
+		max-width: 510px;
+	}
+
+	&__add {
+		font-size: 14px;
+		color: #616f82;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		flex-wrap: nowrap;
+
+		span {
+			margin-right: 10px;
+			white-space: nowrap;
+		}
+
+		&:hover {
+			& > * {
+				color: #4198c5;
+				border: 1px solid #4198c5;
+			}
+
+			span {
+				border: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.tabs {
+		&__tabs {
+			overflow-x: auto;
+			max-width: 180px;
+		}
+	}
+}

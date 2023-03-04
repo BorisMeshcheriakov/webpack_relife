@@ -4,13 +4,13 @@ import {
 	RootModal,
 	Main,
 	TechService,
-	// PaymentListener,
+	PaymentListener,
 	Profile,
 	SupportPage,
 	NotFound,
 	Loading,
-	// Notifications,
-	// ProgramPayment,
+	Notifications,
+	ProgramPayment,
 } from 'modules';
 import { components } from './dynamicComponents';
 import { ProtectedRoute } from 'library/components/common';
@@ -79,9 +79,9 @@ const Routes = () => {
 				<Route path="/personal" render={() => <Profile />} />
 				<Route path="/support" render={() => <SupportPage />} />
 				<Route exact path="/technical-service" render={() => <TechService />} />
-				{/* <Route path="/payment" exact component={PaymentListener} /> */}
-				{/* <Route exact path="/program-payment" component={ProgramPayment} /> */}
-				{/* <Route path="/notifications" exact render={() => <Notifications />} /> */}
+				<Route path="/payment" exact component={PaymentListener} />
+				<Route exact path="/program-payment" component={ProgramPayment} />
+				<Route path="/notifications" exact render={() => <Notifications />} />
 				<Route path="*" render={() => (modulesLoading ? <Loading /> : <NotFound />)} />
 			</Switch>
 		</>

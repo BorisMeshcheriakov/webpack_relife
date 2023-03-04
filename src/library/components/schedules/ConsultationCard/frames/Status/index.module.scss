@@ -1,0 +1,15 @@
+.status {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0px;
+
+	&__notPayed {
+		color: #f62434;
+	}
+
+	&__moved {
+		color: #ec8532;
+	}
+}

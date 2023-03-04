@@ -1,0 +1,16 @@
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.wrapper {
+	@include flexRowCenter;
+	flex-grow: 1;
+	padding: 0 5px;
+}
+
+.loader {
+	max-width: 128px;
+	height: 28px;
+	background-color: $bgrey;
+	flex-grow: 1;
+	border-radius: 4px;
+}

@@ -1,0 +1,28 @@
+@import 'resources/branding/colors';
+
+.payment {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $bgrey;
+}
+
+.spinner {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 5px solid rgba(255, 255, 255, 0.1);
+	border-top-color: #09d;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}

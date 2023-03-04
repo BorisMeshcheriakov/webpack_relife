@@ -1,0 +1,15 @@
+.item {
+	color: #616f82;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+
+	span {
+		margin-left: 2px;
+		line-height: 14px;
+	}
+
+	&__text {
+		margin-left: 10px;
+	}
+}

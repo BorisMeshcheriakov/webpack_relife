@@ -1,0 +1,26 @@
+@import 'resources/branding/colors';
+
+@mixin active {
+	color: $blue;
+	background-color: #fff;
+	border: 1px solid $blue;
+
+	svg {
+		path {
+			fill: $blue;
+		}
+	}
+}
+
+.button {
+	color: $dark_grey;
+	border: 1px solid $dark_grey;
+	border-radius: 100px;
+	height: 26px;
+	font-size: 14px;
+	padding: 0 10px;
+
+	&:hover {
+		@include active;
+	}
+}

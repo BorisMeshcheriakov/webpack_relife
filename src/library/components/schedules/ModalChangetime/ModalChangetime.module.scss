@@ -1,0 +1,33 @@
+.wrap {
+	max-height: calc(100% - 60px);
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px 20px 20px;
+}
+
+.toolbar {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0 15px;
+
+	&__item {
+		display: flex;
+		width: calc(100% / 3);
+
+		&.content_center {
+			justify-content: center;
+		}
+
+		&.content_end {
+			justify-content: flex-end;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.wrap {
+		max-height: calc(100vh - 60px);
+	}
+}

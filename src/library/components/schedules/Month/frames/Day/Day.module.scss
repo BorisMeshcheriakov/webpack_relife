@@ -1,0 +1,65 @@
+@import 'resources/branding/colors';
+
+.day {
+	flex: 0 1 150px;
+	height: 141px;
+	border: 1px solid $border;
+	border-radius: 4px;
+	padding: 10px;
+	cursor: pointer;
+
+	&:not(:last-child) {
+		margin-right: 8px;
+	}
+
+	&.today,
+	&:hover {
+		border: 1px solid $blue;
+
+		h3 {
+			color: $blue;
+		}
+	}
+
+	&.invisible {
+		border: none;
+
+		& > * {
+			display: none;
+		}
+	}
+
+	h3 {
+		text-align: end;
+	}
+}
+
+.sessions {
+	padding-top: 10px;
+
+	&__session {
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: $bgrey;
+		border-radius: 4px;
+		padding-left: 10px;
+
+		svg {
+			margin: 0 10px;
+		}
+
+		span {
+			color: $dark_grey;
+			font-size: 12px;
+			margin: 0 10px;
+		}
+	}
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.row {
+	display: flex;
+	flex-grow: 1;
+	height: 40px;
+
+	&__label {
+		@include flex;
+		flex: 0 1 120px;
+	}
+
+	&__value {
+		@include flex;
+		background-color: $bgrey;
+		flex: 0 1 341px;
+		border-radius: 4px;
+		padding: 0 10px;
+
+		&.unconfirmed,
+		&.notPayed,
+		&.cancelled {
+			color: $red;
+		}
+
+		&.confirmed {
+			color: $green;
+		}
+
+		&.paymentAwaiting {
+			color: $orange;
+		}
+	}
+}
+
+.confirm {
+	flex: 0 0 106px;
+	color: $blue;
+}

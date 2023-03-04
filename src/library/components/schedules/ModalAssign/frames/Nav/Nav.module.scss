@@ -1,0 +1,21 @@
+@import 'resources/mixins/elements';
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.nav {
+	@include flexRowBetween;
+	@include blockShadow;
+	height: 60px;
+	padding: 0 20px;
+
+	&__user {
+		display: flex;
+		align-items: center;
+	}
+
+	&__about {
+		display: flex;
+		align-items: center;
+		height: 34px;
+	}
+}

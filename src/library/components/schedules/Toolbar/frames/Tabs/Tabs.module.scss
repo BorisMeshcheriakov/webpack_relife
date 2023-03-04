@@ -1,0 +1,17 @@
+@import 'resources/branding/colors';
+
+.tabs {
+	display: flex;
+	align-items: center;
+}
+
+.tab {
+	padding: 0 7px;
+	color: $dark_grey;
+	cursor: pointer;
+
+	&.active,
+	&:hover {
+		color: $blue;
+	}
+}

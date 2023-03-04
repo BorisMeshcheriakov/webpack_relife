@@ -1,0 +1,11 @@
+@import 'resources/mixins/flex';
+
+.duration {
+	@include flex;
+
+	& > * {
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+}

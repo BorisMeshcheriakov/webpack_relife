@@ -1,0 +1,19 @@
+@import 'resources/branding/colors';
+
+.hour {
+	height: 36px;
+	display: flex;
+	align-items: center;
+
+	&.active {
+		color: $blue;
+	}
+
+	&:nth-child(2n) {
+		opacity: 0.5;
+
+		&.active {
+			opacity: 1;
+		}
+	}
+}

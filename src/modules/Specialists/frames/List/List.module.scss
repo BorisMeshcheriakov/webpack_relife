@@ -1,0 +1,30 @@
+.list {
+	height: 100%;
+	margin: 30px 0 20px 0;
+	overflow: auto;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.wrapper {
+	margin: 0 20px;
+}
+
+.scroller {
+	height: 100%;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.card {
+	height: 200px;
+	border: 1px solid blue;
+}

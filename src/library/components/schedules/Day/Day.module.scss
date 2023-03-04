@@ -1,0 +1,27 @@
+@import 'resources/mixins/elements';
+
+.day {
+	@include blockShadow;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	padding: 0 15px 15px 15px;
+}
+
+.weekday {
+	display: flex;
+	padding-left: 68px;
+	line-height: 60px;
+	flex-shrink: 0;
+	text-transform: capitalize;
+	margin-bottom: 4px;
+}
+
+.calendar {
+	display: flex;
+	flex-direction: column;
+	background: white;
+	flex-grow: 1;
+	overflow: auto;
+	min-height: 0;
+}

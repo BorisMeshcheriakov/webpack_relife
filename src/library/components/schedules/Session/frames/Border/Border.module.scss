@@ -1,0 +1,147 @@
+@import 'resources/branding/colors';
+
+@mixin active {
+	border-color: $blue;
+	color: $blue;
+}
+
+@mixin remove {
+	border-color: $red;
+	color: $red;
+}
+
+@mixin busy {
+	background-color: $bgrey;
+	color: $dark_grey;
+}
+
+@mixin statuses {
+	&.active {
+		@include active;
+	}
+
+	&.create {
+		@include active;
+	}
+
+	&.update {
+		@include active;
+	}
+
+	&.remove {
+		@include remove;
+	}
+
+	&.busy {
+		@include busy;
+	}
+
+	&.unconfirmed {
+		@include busy;
+		border-left: 2px solid $red;
+	}
+}
+
+.block {
+	max-width: 128px;
+	font-size: 12px;
+	flex-grow: 1;
+	display: flex;
+
+	&.single {
+		height: 28px;
+		border-radius: 4px;
+		border: 1px solid $border;
+		color: $dark_grey;
+		align-self: center;
+
+		@include statuses;
+
+		&.now {
+			border: 1px solid $blue;
+		}
+	}
+
+	&.top {
+		height: 32px;
+		border-radius: 4px 4px 0 0;
+		border-top: 1px solid $border;
+		border-left: 1px solid $border;
+		border-right: 1px solid $border;
+		color: $dark_grey;
+		align-self: flex-end;
+
+		&.overlap {
+			&_bottom {
+				border-bottom: 1px dashed $border;
+				align-self: center;
+				height: 28px;
+			}
+		}
+
+		&.now {
+			border-color: $blue;
+		}
+
+		@include statuses;
+	}
+
+	&.middle {
+		height: 36px;
+		border-left: 1px solid $border;
+		border-right: 1px solid $border;
+		align-self: center;
+
+		&.overlap {
+			&_top {
+				border-top: 1px dashed $border;
+				height: 32px;
+				align-self: flex-end;
+			}
+
+			&_bottom {
+				border-bottom: 1px dashed $border;
+				align-self: flex-start;
+				height: 32px;
+			}
+		}
+
+		&.now {
+			border-color: $blue;
+		}
+
+		@include statuses;
+	}
+
+	&.bottom {
+		height: 32px;
+		border-radius: 0 0 4px 4px;
+		align-self: flex-start;
+		border-bottom: 1px solid $border;
+		border-left: 1px solid $border;
+		border-right: 1px solid $border;
+
+		&.overlap {
+			&_top {
+				border-top: 1px dashed $border;
+				align-self: center;
+				height: 28px;
+			}
+		}
+
+		&.now {
+			border-color: $blue;
+		}
+
+		@include statuses;
+	}
+
+	&.empty {
+	}
+
+	&.active {
+		@include active;
+	}
+
+	@include statuses;
+}

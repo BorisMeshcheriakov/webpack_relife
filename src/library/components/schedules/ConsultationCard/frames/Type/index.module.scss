@@ -1,0 +1,22 @@
+.type {
+	display: flex;
+	align-items: center;
+	height: 20px;
+
+	&__icon {
+		display: flex;
+
+		path {
+			fill: #4198c5;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		letter-spacing: 0px;
+		margin-left: 6px;
+	}
+}

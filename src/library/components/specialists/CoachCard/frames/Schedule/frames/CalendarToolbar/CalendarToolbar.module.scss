@@ -1,0 +1,48 @@
+@import 'resources/branding/colors';
+
+.date {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+	margin-right: 10px;
+
+	&__date {
+		color: $dark_grey;
+		text-transform: capitalize;
+	}
+
+	&__buttons {
+		& > * {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.btn {
+	color: $dark_grey;
+
+	&:hover,
+	&.active {
+		color: $blue;
+	}
+}
+
+.arrow {
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background-color: $bgrey;
+	color: $dark_grey;
+
+	& > * {
+		transform: scale(0.8);
+	}
+
+	&:hover {
+		color: #fff;
+		background-color: $blue;
+	}
+}

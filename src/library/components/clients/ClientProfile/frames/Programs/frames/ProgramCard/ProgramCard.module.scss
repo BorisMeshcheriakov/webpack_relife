@@ -1,0 +1,112 @@
+.program {
+  position: relative;
+  width: 100%;
+  flex: 1 0 66px;
+  display: flex;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 9px 20px 8px 10px;
+  transition: 300ms;
+  cursor: pointer;
+
+  &.new {
+    border-color: #4198c5;
+  }
+
+  &.payed {
+    border-color: #ec8532;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 11px rgba(0, 0, 0, 0.1);
+  }
+
+ 
+}
+
+.image {
+  width: 82px;
+  height: 47px;
+  border-radius: 4px;
+  object-fit: cover;
+  background: cornflowerblue;
+  margin-right: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  margin-right: 35px;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 382px;
+  text-overflow: ellipsis;
+}
+
+.title {
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.author {
+  font-size: 14px;
+  color: #616f82;
+  line-height: 14px;
+}
+
+.status {
+  width: 129px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+
+  &__progress {
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+  }
+
+  &__current {
+    position: relative;
+    height: 100%;
+    color: #ec8532;
+    display: flex;
+    height: 26px;
+  }
+
+  &__past {
+    display: flex;
+    color: #616f82;
+    height: 100%;
+    align-items: flex-end;
+    line-height: 14px;
+  }
+
+  &__value {
+    font-size: 14px;
+  }
+}
+
+.progress {
+  width: 24px;
+  height: 24px;
+}
+
+.period {
+  display: flex;
+  align-items: flex-end;
+
+  & > {
+    span {
+      color: #616f82;
+      font-size: 14px;
+    }
+  }
+}

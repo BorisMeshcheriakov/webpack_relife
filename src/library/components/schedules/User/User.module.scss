@@ -1,0 +1,7 @@
+@import 'resources/mixins/elements';
+@import 'resources/mixins/flex';
+
+.user {
+	@include flex;
+	height: 60px;
+}

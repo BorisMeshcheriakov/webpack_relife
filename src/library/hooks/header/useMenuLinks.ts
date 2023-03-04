@@ -6,7 +6,7 @@ import { useAppDispatch } from 'library/hooks/common/reduxTypedHooks';
 
 import { selectModules } from 'library/redux/common';
 import { openOutModal } from 'library/redux/modal';
-// import { setSelectedTab } from 'library/redux/programs';
+import { setSelectedTab } from 'library/redux/programs';
 
 const useMenuLinks = () => {
 	const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -59,7 +59,7 @@ const useMenuLinks = () => {
 	};
 
 	const handleVideoClick = () => {
-		// dispatch(setSelectedTab('Все'));
+		dispatch(setSelectedTab('Все'));
 	};
 
 	const showCart = () => {

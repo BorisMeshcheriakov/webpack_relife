@@ -1,0 +1,54 @@
+@import 'resources/mixins/elements';
+
+.week {
+	@include blockShadow;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	padding: 0 3px 0 22px;
+}
+
+.weekdays {
+	display: flex;
+	padding-left: 48px;
+	height: 60px;
+	flex-shrink: 0;
+
+	&__day {
+		flex: 1 1 128px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+}
+
+.calendar {
+	display: flex;
+	background: white;
+	flex-grow: 1;
+	overflow: auto;
+	min-height: 0;
+	&__hours {
+		width: 48px;
+		flex: 0 0 48px;
+		font-size: 14px;
+	}
+
+	&__sessions {
+		display: flex;
+		flex: 1 1 auto;
+	}
+
+	&__column {
+		flex: 1 1 128px;
+	}
+
+	&__session {
+		height: 36px;
+		display: flex;
+		justify-content: center;
+		padding: 0 5px;
+	}
+}

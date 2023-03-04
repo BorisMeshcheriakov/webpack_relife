@@ -1,0 +1,29 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.settings {
+	@include flex;
+	color: $dark_grey;
+	font-size: 14px;
+
+	&:hover {
+		color: $blue;
+
+		.settings__wrap {
+			background-color: $blue;
+			color: #fff;
+		}
+	}
+
+	&__wrap {
+		@include flexRowCenter;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background-color: $bgrey;
+
+		& > * {
+			scale: 0.8;
+		}
+	}
+}

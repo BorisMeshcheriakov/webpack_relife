@@ -1,0 +1,41 @@
+.menu {
+  width: 34px;
+  position: relative;
+
+  &__button {
+    width: 34px;
+    height: 34px;
+  }
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    right: 17px;
+    top: 17px;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.button {
+  width: 230px;
+  text-align: left;
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+  padding: 9px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f1f2f4;
+  }
+}

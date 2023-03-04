@@ -1,0 +1,36 @@
+@import 'resources/branding/colors';
+
+.button {
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background: #f1f2f4;
+	color: $dark_grey;
+
+	&:hover,
+	&.active {
+		background: #4198c5;
+		color: #fff;
+
+		.icon {
+			path {
+				fill: #fff;
+			}
+		}
+	}
+
+	& > * {
+		transform: scale(0.8);
+	}
+}
+
+.icon {
+	display: flex;
+	flex-shrink: 0;
+}

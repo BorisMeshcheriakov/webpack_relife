@@ -1,0 +1,19 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.time {
+	@include flex;
+	width: 58px;
+	border-radius: 4px;
+	font-size: 14px;
+	padding-left: 7px;
+
+	&.transparent {
+		opacity: 0.5;
+	}
+
+	&.active {
+		color: $blue;
+		opacity: 1;
+	}
+}

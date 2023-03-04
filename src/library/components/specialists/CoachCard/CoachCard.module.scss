@@ -1,0 +1,47 @@
+.card {
+	display: flex;
+	height: 288px;
+	padding: 24px 20px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 1px 4px rgba(19, 19, 19, 0.1);
+	transition: transform 300ms ease-in-out;
+
+	// &:hover {
+	// 	transform: scale(1.01);
+	// }
+
+	&__avatar {
+		flex: 0 0 256px;
+		height: 240px;
+		margin-right: 28px;
+		position: relative;
+	}
+
+	&__info {
+		overflow: hidden;
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 240px;
+
+		& > * {
+			&:not(:last-child) {
+				margin-bottom: 12px;
+			}
+		}
+	}
+
+	&__schedule {
+		flex: 0 0 340px;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-between;
+		align-items: flex-end;
+		max-width: 278px;
+	}
+}

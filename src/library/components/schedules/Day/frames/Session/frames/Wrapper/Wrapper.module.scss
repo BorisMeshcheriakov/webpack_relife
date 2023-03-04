@@ -1,0 +1,180 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	height: 36px;
+
+	&.top {
+		align-items: flex-end;
+	}
+
+	&.bottom {
+		align-items: flex-start;
+	}
+}
+
+@mixin busy {
+	cursor: pointer;
+	& > * {
+		background-color: $bgrey;
+		color: $dark_grey;
+		border: none;
+	}
+}
+
+@mixin now {
+	& > * {
+		border: none;
+	}
+
+	&.unconfirmed {
+		@include busy;
+		background-color: $bgrey;
+		border-left: 2px solid $red;
+
+		& > * {
+			&:first-child {
+				width: 54px;
+			}
+		}
+	}
+}
+
+.innerWrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+	height: 28px;
+	border-radius: 4px;
+
+	& > * {
+		border: 1px solid $border;
+	}
+
+	&.top {
+		height: 32px;
+		border-radius: 4px 4px 0 0;
+
+		& > * {
+			border-radius: 4px 4px 0 0;
+			border-bottom: none;
+		}
+
+		&.overlap {
+			&_bottom {
+				height: 28px;
+				align-self: center;
+
+				& > * {
+					border-bottom: 1px dashed $border;
+				}
+			}
+		}
+
+		&.now {
+			@include now;
+			border-left: 1px solid $blue;
+			border-right: 1px solid $blue;
+			border-top: 1px solid $blue;
+		}
+	}
+
+	&.middle {
+		height: 36px;
+		border-radius: 0;
+
+		& > * {
+			border-radius: 0;
+			border-top: none;
+			border-bottom: none;
+		}
+
+		&.overlap {
+			&_top {
+				height: 32px;
+				align-self: flex-end;
+
+				& > * {
+					border-top: 1px dashed $border;
+				}
+			}
+
+			&_bottom {
+				align-self: flex-start;
+				height: 32px;
+
+				& > * {
+					border-bottom: 1px dashed $border;
+				}
+			}
+		}
+
+		&.now {
+			@include now;
+			border-left: 1px solid $blue;
+			border-right: 1px solid $blue;
+		}
+	}
+
+	&.bottom {
+		height: 32px;
+		border-radius: 0 0 4px 4px;
+
+		& > * {
+			border-radius: 0 0 4px 4px;
+			border-top: none;
+		}
+
+		&.overlap {
+			&_top {
+				align-self: center;
+				height: 28px;
+
+				& > * {
+					border-top: 1px dashed $border;
+				}
+			}
+		}
+
+		&.now {
+			@include now;
+			border-bottom: 1px solid $blue;
+			border-left: 1px solid $blue;
+			border-right: 1px solid $blue;
+		}
+	}
+
+	&.single {
+		& > * {
+			&:first-child {
+				border: none;
+			}
+		}
+
+		&.now {
+			@include now;
+			border: 1px solid $blue;
+		}
+	}
+
+	&.busy {
+		@include busy;
+	}
+
+	&.unconfirmed {
+		@include busy;
+		border-left: 2px solid $red;
+
+		& > * {
+			&:first-child {
+				width: 56px;
+			}
+
+			&:last-child {
+				width: calc(100% - 65px);
+			}
+		}
+	}
+}

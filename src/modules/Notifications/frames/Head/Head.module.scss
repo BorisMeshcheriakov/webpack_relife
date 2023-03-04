@@ -1,0 +1,16 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-width: 320px;
+	height: 60px;
+	padding: 0 15px;
+	transition: display 0.5s;
+
+	.title {
+		display: flex;
+		align-items: center;
+		padding: 0 7px;
+		color: #616f82;
+	}
+}

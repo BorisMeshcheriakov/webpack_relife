@@ -1,0 +1,28 @@
+.button {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+  outline: none;
+  border: 1px solid #616f82;
+
+  &:hover {
+    border-color: #4198c5;
+
+    .icon {
+      path {
+        stroke: #4198c5;
+      }
+    }
+  }
+}
+
+.icon {
+  display: flex;
+}

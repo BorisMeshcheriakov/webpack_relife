@@ -1,0 +1,17 @@
+.programs {
+	height: 100%;
+	padding: 10px;
+	overflow-y: scroll;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		min-height: 0;
+
+		& > * {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

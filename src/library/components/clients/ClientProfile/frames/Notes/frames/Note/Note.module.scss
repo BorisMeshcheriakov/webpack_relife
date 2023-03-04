@@ -1,0 +1,27 @@
+.note {
+	font-size: 14px;
+	padding-right: 64px;
+	position: relative;
+	margin: 0 0 10px 0;
+	display: flex;
+	min-height: 37px;
+
+	&__date {
+		position: absolute;
+		color: #616f82;
+		margin-right: 10px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__menu {
+		width: 34px;
+		height: 34px;
+		position: absolute;
+		right: 6px;
+		top: 0;
+	}
+}

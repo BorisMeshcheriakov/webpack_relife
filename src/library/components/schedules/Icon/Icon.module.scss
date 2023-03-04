@@ -1,0 +1,19 @@
+@import 'resources/branding/colors';
+
+.icon {
+	&.active {
+		color: $blue;
+
+		& > path {
+			fill: $blue;
+		}
+	}
+
+	&.remove {
+		color: $red;
+
+		& > path {
+			fill: $red;
+		}
+	}
+}

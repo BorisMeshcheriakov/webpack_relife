@@ -1,6 +1,5 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import { ButtonNotifications } from 'library/components/header';
+import { ButtonNotifications } from 'library/components/header';
 
 import useMenulinks from 'library/hooks/header/useMenuLinks';
 import useUser from 'library/hooks/user/useUser';
@@ -52,7 +51,7 @@ const MenuDesktop = () => {
 					})}
 			</div>
 			<div className={st.menu}>
-				{/* {isAuth && <ButtonNotifications />} */}
+				{isAuth && <ButtonNotifications />}
 				<ButtonSupport />
 				{isAuth && links.showCart && <ButtonCart />}
 				{isAuth ? <Profile /> : <ButtonLogin />}

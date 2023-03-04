@@ -1,0 +1,53 @@
+@import 'resources/branding/colors';
+
+.card {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	min-width: 335px;
+	min-height: 120px;
+	padding: 20px 15px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: $shadow;
+
+	.icon {
+		display: flex;
+		align-items: center;
+		min-width: 40px;
+		height: 40px;
+		font-size: 14px;
+		color: #8792a3;
+	}
+
+	.house {
+		width: 45px;
+
+		svg {
+			margin-right: 10px;
+			transform: scale(1.25);
+		}
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0 10px;
+		font-size: 18px;
+
+		.phone {
+			span {
+				color: $blue;
+			}
+		}
+
+		.note,
+		.address,
+		.phone {
+			max-height: 54px;
+			overflow: auto;
+		}
+	}
+}

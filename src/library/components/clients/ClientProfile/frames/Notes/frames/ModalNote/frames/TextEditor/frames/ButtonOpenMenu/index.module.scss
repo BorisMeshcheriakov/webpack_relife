@@ -1,0 +1,35 @@
+.add {
+	height: 34px;
+	width: 34px;
+	border-radius: 50%;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 300ms;
+	outline: none;
+	z-index: 3;
+	border: 1px solid #616f82;
+
+	&:hover {
+		color: #fff;
+		border-color: #4198c5;
+
+		.icon {
+			path {
+				fill: #4198c5;
+			}
+		}
+	}
+
+	&.active {
+		transform: rotate(45deg);
+	}
+}
+
+.icon {
+	display: flex;
+	transition: 300ms;
+}

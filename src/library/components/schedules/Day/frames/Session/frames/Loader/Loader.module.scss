@@ -1,0 +1,23 @@
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.wrapper {
+	@include flexRowBetween;
+	flex-grow: 1;
+	flex-shrink: 0;
+	height: 36px;
+}
+
+.time {
+	width: 58px;
+	height: 28px;
+	border-radius: 4px;
+	background-color: $bgrey;
+}
+
+.loader {
+	height: 28px;
+	background-color: $bgrey;
+	width: calc(100% - 67px);
+	border-radius: 4px;
+}

@@ -1,0 +1,43 @@
+@import 'resources/mixins/elements';
+@import 'resources/branding/colors';
+
+.block {
+	@include blockShadow;
+	width: 510px;
+	padding: 20px;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.row {
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+
+	& > * {
+		display: flex;
+		align-items: center;
+	}
+
+	&__label {
+	}
+
+	&__data {
+		background-color: $bgrey;
+		flex: 0 0 341px;
+		border-radius: 4px;
+		padding: 0 10px;
+
+		&.confirmed {
+			color: $green;
+		}
+
+		&.unconfirmed {
+			color: $red;
+		}
+	}
+}

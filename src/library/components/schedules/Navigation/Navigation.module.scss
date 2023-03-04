@@ -1,0 +1,22 @@
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.navigation {
+	@include flex;
+	color: $dark_grey;
+
+	button {
+		font-size: 14px;
+
+		&:first-child {
+			margin-right: 15px;
+			&:hover {
+				color: $blue;
+			}
+		}
+
+		&:last-child {
+			margin-left: 10px;
+		}
+	}
+}

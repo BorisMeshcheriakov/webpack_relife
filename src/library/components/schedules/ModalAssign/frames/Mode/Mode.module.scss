@@ -1,0 +1,15 @@
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.row {
+	display: flex;
+	height: 40px;
+
+	&__value {
+		@include flex;
+		background-color: $bgrey;
+		flex: 0 1 341px;
+		border-radius: 4px;
+		padding: 0 10px;
+	}
+}

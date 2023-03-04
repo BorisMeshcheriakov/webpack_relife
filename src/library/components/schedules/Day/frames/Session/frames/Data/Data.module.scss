@@ -1,0 +1,28 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.data {
+	@include flex;
+	width: calc(100% - 67px);
+	border-radius: 4px;
+	font-size: 14px;
+
+	&__icon {
+		@include flex;
+		font-size: 14px;
+		padding: 0 9px;
+
+		& > * {
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	&__status {
+		flex-grow: 1;
+		text-align: end;
+		padding-right: 22px;
+		color: $red;
+	}
+}

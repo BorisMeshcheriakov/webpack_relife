@@ -4,6 +4,7 @@ const cleanWebpackPlugin = require('./clean-webpack-plugin');
 const imageMinimizerWebpackPlugin = require('./image-minimizer-webpack-plugin');
 const eslintWebpackPlugin = require('./eslint-webpack-plugin');
 const esbuildPlugin = require('./esbuild-plugin');
+const providePlugin = require('./provide-plugin');
 
 module.exports = {
 	htmlWebpackPlugin,
@@ -12,4 +13,5 @@ module.exports = {
 	imageMinimizerWebpackPlugin,
 	eslintWebpackPlugin,
 	esbuildPlugin,
+	providePlugin,
 };

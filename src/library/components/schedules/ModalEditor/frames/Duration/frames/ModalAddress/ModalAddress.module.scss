@@ -1,0 +1,50 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	height: calc(100% - 70px);
+	padding: 0 20px 20px;
+	overflow: scroll;
+
+	.title {
+		display: flex;
+		margin: 0 10px 15px;
+		font-size: 19px;
+
+		.rotate {
+			transform: rotate(45deg);
+		}
+
+		.btn {
+			min-width: 57px;
+			font-size: 16px;
+			color: $blue;
+		}
+
+		h3 {
+			flex-grow: 1;
+			min-width: 250px;
+		}
+	}
+
+	&__form {
+		.form {
+			display: flex;
+			min-width: 335px;
+			padding: 20px 15px 20px 20px;
+			margin-bottom: 30px;
+			background-color: #fff;
+			border-radius: 4px;
+			box-shadow: $shadow;
+			transition: 300ms;
+		}
+	}
+
+	&__list {
+		.helper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 465px;
+		}
+	}
+}

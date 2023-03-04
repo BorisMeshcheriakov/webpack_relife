@@ -1,0 +1,40 @@
+.day {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 20px;
+	width: 37px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0px;
+
+	&.hidden {
+		opacity: 0 !important;
+	}
+
+	&.hasOpen {
+		border: 1px solid #4198c5;
+		color: #4198c5;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #4198c5;
+			color: #fff;
+		}
+	}
+
+	&.empty {
+		border: 1px solid #8fc0db;
+		color: #8fc0db;
+	}
+
+	&.now {
+		border: 1px solid #4198c5;
+		background-color: #4198c5;
+		color: #fff;
+	}
+}

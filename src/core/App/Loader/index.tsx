@@ -6,14 +6,14 @@ import {
 } from 'library/hooks/common';
 import { useLoadUser } from 'library/hooks/user';
 import { useLoadCart } from 'library/hooks/cart';
-// import { useLoadNotifications } from 'library/hooks/notifications';
+import { useLoadNotifications } from 'library/hooks/notifications';
 
 const Loader = () => {
 	useLoadUser();
 	useLoadModules();
 	useLoadCart();
 	useLoadWebSettings();
-	// useLoadNotifications();
+	useLoadNotifications();
 	useLoadCommonSettings();
 	// useClearCookie();
 	return <></>;

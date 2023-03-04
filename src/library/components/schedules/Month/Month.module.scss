@@ -1,0 +1,36 @@
+@import 'resources/mixins/elements';
+
+.month {
+	@include blockShadow;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	padding: 0 15px 15px 15px;
+}
+
+.weekdays {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4px;
+
+	&__day {
+		flex: 0 1 150px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		text-transform: capitalize;
+	}
+}
+
+.calendar {
+	overflow: auto;
+
+	&__week {
+		display: flex;
+		justify-content: space-between;
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+}

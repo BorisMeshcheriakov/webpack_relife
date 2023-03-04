@@ -1,0 +1,45 @@
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.mode {
+	@include flex;
+}
+
+@mixin btn_active {
+	color: $blue;
+
+	svg {
+		path {
+			fill: $blue;
+		}
+	}
+}
+
+.btn {
+	@include flex;
+	font-size: 14px;
+	color: $dark_grey;
+
+	position: relative;
+
+	&:not(:last-child) {
+		padding-right: 20px;
+		&::after {
+			display: block;
+			content: '';
+			position: absolute;
+			right: 10px;
+			width: 1px;
+			height: 14px;
+			background-color: $border;
+		}
+	}
+
+	&:hover {
+		@include btn_active;
+	}
+
+	&.active {
+		@include btn_active;
+	}
+}

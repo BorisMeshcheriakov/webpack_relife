@@ -1,0 +1,58 @@
+.list {
+	display: flex;
+	flex: 0 1 366px;
+	padding-left: 20px;
+	transition: 0.3s;
+
+	&_open {
+		z-index: 1;
+	}
+}
+
+.wrapper {
+	flex-grow: 1;
+}
+
+.toolbar {
+	height: 60px;
+
+	&__buttons {
+		padding: 0 10px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__search {
+		display: flex;
+		flex-grow: 1;
+	}
+}
+
+.scroll {
+	overflow-y: scroll;
+	height: calc(100% - 120px);
+	padding-bottom: 10px;
+}
+
+.cards {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__card {
+		padding: 1px;
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.list {
+		position: absolute;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: #f1f2f4;
+		height: calc(100vh - 60px);
+	}
+}

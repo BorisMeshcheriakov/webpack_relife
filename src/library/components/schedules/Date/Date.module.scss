@@ -1,0 +1,6 @@
+@import 'resources/mixins/flex';
+
+.date {
+	@include flex;
+	text-transform: capitalize;
+}

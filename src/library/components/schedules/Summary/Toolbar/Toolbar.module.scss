@@ -1,0 +1,15 @@
+@import 'resources/mixins/elements';
+
+.toolbar {
+	@include blockShadow;
+	height: 60px;
+	margin-bottom: 10px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+
+	&__name {
+		margin-left: 10px;
+	}
+}

@@ -1,0 +1,52 @@
+@import 'resources/mixins/elements';
+@import 'resources/mixins/flex';
+@import 'resources/branding/colors';
+
+.consultation {
+	@include blockShadow;
+	border: 1px solid $border;
+	border-left: 1px solid $border;
+	cursor: pointer;
+
+	&__link {
+		height: 66px;
+		padding: 10px;
+		display: flex;
+	}
+
+	&__icon {
+		flex: 0 0 40px;
+		@include flexRowCenter;
+	}
+
+	&__data {
+		display: flex;
+		flex: 1 0 auto;
+		padding-left: 10px;
+	}
+
+	&__status {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		flex: 0 0 120px;
+	}
+
+	&.now {
+		border: 1px solid $blue;
+
+		& > a > section {
+			&:first-child {
+				div {
+					background-color: $blue;
+
+					svg {
+						path {
+							fill: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}

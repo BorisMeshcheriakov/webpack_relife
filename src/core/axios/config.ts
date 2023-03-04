@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { clearCookie, getCookie } from '../../setupCookie';
-//import { clearUserData } from 'library/redux/users';
-//import { store } from 'core/redux/store';
-//import { showPopup } from 'library/redux/modal';
+import { clearUserData } from 'library/redux/users';
+import { store } from 'core/redux/store';
+import { showPopup } from 'library/redux/modal';
 
 axios.defaults.withCredentials = true;
 
@@ -22,7 +22,7 @@ xhr.interceptors.response.use(
 		if (error.response.status === 401) {
 			// console.log('ошибка авторизации');
 			clearCookie();
-			// store.dispatch(clearUserData());
+			store.dispatch(clearUserData());
 			return (window.location.href = '/');
 		}
 
@@ -34,12 +34,12 @@ xhr.interceptors.response.use(
 		}
 
 		if (error.response?.status === 403) {
-			//store.dispatch(showPopup({ type: 'error', text: '403: Недостаточно пользовательских прав' }));
+			store.dispatch(showPopup({ type: 'error', text: '403: Недостаточно пользовательских прав' }));
 			return;
 		}
 
 		if (error.response?.status === 500) {
-			//store.dispatch(showPopup({ type: 'error', text: '500: Неизвестная ошибка' }));
+			store.dispatch(showPopup({ type: 'error', text: '500: Неизвестная ошибка' }));
 			return;
 		}
 

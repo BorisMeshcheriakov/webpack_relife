@@ -7,9 +7,9 @@ import shop from 'library/redux/shop';
 import cart from 'library/redux/cart';
 import events from 'library/redux/events';
 import programs from 'library/redux/programs';
-// import schedules from 'library/redux/schedules';
-// import specialists from 'library/redux/specialists';
-// import notifications from 'library/redux/notifications';
+import schedules from 'library/redux/schedules';
+import specialists from 'library/redux/specialists';
+import notifications from 'library/redux/notifications';
 import statistics from 'library/redux/statistics';
 import clients from 'library/redux/clients';
 
@@ -22,9 +22,9 @@ export const store = configureStore({
 		cart,
 		events,
 		programs,
-		// schedules,
-		// specialists,
-		// notifications,
+		schedules,
+		specialists,
+		notifications,
 		statistics,
 		clients,
 	},

@@ -1,0 +1,34 @@
+.schedule {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.buttons {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+	&__selector {
+		box-sizing: border-box;
+		height: 32px;
+		border: 1px solid #cfcfcf;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		flex: 0 1 288px;
+
+		&.active {
+			border: 1px solid #4198c5;
+		}
+	}
+}
+
+.workspace {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding-right: 43px;
+}

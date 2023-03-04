@@ -1,0 +1,31 @@
+@import 'resources/branding/colors';
+
+.head {
+	height: 60px;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__title {
+		font-size: 20px;
+	}
+
+	&__confirm {
+		position: absolute;
+		right: 20px;
+		color: $blue;
+		opacity: 0.5;
+		font-size: 14px;
+
+		&.active {
+			opacity: 1;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		right: -40px;
+		top: -10px;
+	}
+}

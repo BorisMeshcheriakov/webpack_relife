@@ -1,0 +1,17 @@
+.list {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: auto;
+}
+
+.scroller {
+	flex-grow: 1;
+	margin: 10px 20px 20px;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}

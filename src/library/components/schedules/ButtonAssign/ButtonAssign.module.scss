@@ -1,0 +1,29 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+
+.assign {
+	@include flex;
+	color: $dark_grey;
+	font-size: 14px;
+
+	&:hover {
+		color: $blue;
+
+		.assign__icon {
+			color: #fff;
+			background-color: $blue;
+		}
+	}
+
+	&__text {
+		margin-right: 10px;
+	}
+
+	&__icon {
+		@include flexRowCenter;
+		background-color: $bgrey;
+		border-radius: 50%;
+		width: 34px;
+		height: 34px;
+	}
+}

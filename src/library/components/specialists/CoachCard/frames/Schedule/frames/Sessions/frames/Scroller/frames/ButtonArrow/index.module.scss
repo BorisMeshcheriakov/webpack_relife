@@ -1,0 +1,38 @@
+.more {
+  width: 37px;
+  height: 20px;
+  border: 1px solid #4198c5;
+  color: #4198c5;
+  border-radius: 4px;
+  background: #fff;
+  margin: 0 4px 8px 0;
+  cursor: pointer;
+  transition: 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: #fff;
+    background: #4198c5;
+    border-color: #4198c5;
+
+    .icon {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+.icon {
+  transition: 300ms;
+  display: flex;
+  path {
+    fill: none;
+  }
+
+  &.left {
+    transform: rotate(180deg);
+  }
+}

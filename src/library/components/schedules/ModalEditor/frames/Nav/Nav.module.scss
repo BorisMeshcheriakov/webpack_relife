@@ -1,0 +1,35 @@
+@import 'resources/mixins/elements';
+
+.nav {
+	@include blockShadow;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0 15px 0 22px;
+
+	&__item {
+		display: flex;
+
+		&.content_start {
+			flex-grow: 1;
+			flex-basis: 0;
+		}
+
+		&.content_center {
+			justify-content: center;
+		}
+
+		&.content_end {
+			flex-grow: 1;
+			flex-basis: 0;
+			justify-content: flex-end;
+		}
+
+		& > * {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+}
