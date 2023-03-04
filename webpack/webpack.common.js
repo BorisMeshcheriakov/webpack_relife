@@ -2,8 +2,7 @@
 const { htmlWebpackPlugin } = require('./plugins');
 const { paths, config } = require('./configuration');
 const { typeScript, css, babel, assets, esbuild, cssModules } = require('./modules');
-const path = require('path');
-require('../node_modules/react-phone-number-input/');
+
 /**
  * Entry point for the bundle.
  */
