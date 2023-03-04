@@ -1,13 +1,13 @@
 const typeScript = require('./typescript');
 const css = require('./css');
 const babel = require('./babel');
-const fonts = require('./fonts');
+const assets = require('./assets');
 const esbuild = require('./esbuild');
 
 module.exports = {
 	typeScript,
 	css,
 	babel,
-	fonts,
+	assets,
 	esbuild,
 };
