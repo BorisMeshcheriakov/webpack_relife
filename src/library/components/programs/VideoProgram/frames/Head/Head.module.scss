@@ -1,0 +1,101 @@
+@import 'resources/branding/colors';
+
+.toolbar {
+	display: flex;
+	flex: 0 0 60px;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0 10px 0 15px;
+	margin: 0 20px;
+
+	h2 {
+		font-size: 18px;
+	}
+
+	&__buttons {
+		display: flex;
+
+		& > * {
+			flex-shrink: 0 !important;
+
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__day {
+		display: flex;
+		align-items: center;
+		color: #616f82;
+		cursor: pointer;
+	}
+
+	&__back {
+		display: flex;
+		align-items: center;
+		color: #616f82;
+
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			background-color: $bgrey;
+		}
+
+		span {
+			padding-left: 10px;
+		}
+
+		&:hover {
+			color: $blue;
+
+			div {
+				background-color: $blue;
+				color: #fff;
+			}
+		}
+	}
+
+	&__left,
+	&__right {
+		display: flex;
+		align-items: center;
+
+		& > * {
+			flex-shrink: 0 !important;
+
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.toolbar {
+		flex: 0 0 auto;
+		align-items: stretch;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: auto;
+		padding: 10px;
+
+		h2 {
+			text-align: center;
+		}
+
+		&__buttons {
+			padding: 10px 0 0 0;
+			justify-content: space-between;
+		}
+
+		&__content {
+			flex-direction: column;
+		}
+	}
+}

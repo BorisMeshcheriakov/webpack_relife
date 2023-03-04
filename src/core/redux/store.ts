@@ -6,12 +6,12 @@ import modals from 'library/redux/modal';
 import shop from 'library/redux/shop';
 import cart from 'library/redux/cart';
 import events from 'library/redux/events';
-// import programs from 'library/redux/programs';
+import programs from 'library/redux/programs';
 // import schedules from 'library/redux/schedules';
 // import specialists from 'library/redux/specialists';
 // import notifications from 'library/redux/notifications';
 import statistics from 'library/redux/statistics';
-// import clients from 'library/redux/clients';
+import clients from 'library/redux/clients';
 
 export const store = configureStore({
 	reducer: {
@@ -21,12 +21,12 @@ export const store = configureStore({
 		shop,
 		cart,
 		events,
-		// programs,
+		programs,
 		// schedules,
 		// specialists,
 		// notifications,
 		statistics,
-		// clients,
+		clients,
 	},
 	devTools: process.env.NODE_ENV !== 'production',
 	middleware: (getDefaultMiddleware) =>

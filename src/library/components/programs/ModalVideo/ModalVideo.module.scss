@@ -1,0 +1,32 @@
+.video {
+	position: relative;
+	padding: 0 20px 20px 20px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	max-height: calc(100% - 64px);
+	overflow: auto;
+}
+
+.head {
+	flex: 0 0 60px;
+	height: 60px;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.player {
+	padding: 10px;
+	width: 100%;
+	flex-grow: 0;
+	margin-bottom: 10px;
+}
+
+.description {
+	min-height: 0;
+	padding: 20px;
+	flex-grow: 1;
+	overflow-y: scroll;
+}

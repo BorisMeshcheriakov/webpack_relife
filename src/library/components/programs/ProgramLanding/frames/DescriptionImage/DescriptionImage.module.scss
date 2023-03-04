@@ -1,0 +1,20 @@
+@use 'sass:math';
+
+.image {
+	width: 547px;
+	height: 307px;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: top;
+	float: left;
+	margin: 0 15px 0 0;
+	flex-shrink: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.image {
+		$width: 100%;
+		width: $width;
+		height: calc($width / 16 * 9);
+	}
+}

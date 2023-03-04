@@ -1,0 +1,13 @@
+.areaWrapper {
+	border: 1px solid #cdcdcd;
+	min-height: 0;
+	overflow: auto;
+	border-radius: 4px;
+	padding: 10px;
+	flex-grow: 1;
+	min-height: 126px;
+
+	&:focus-within {
+		border: 1px solid #4198c5;
+	}
+}

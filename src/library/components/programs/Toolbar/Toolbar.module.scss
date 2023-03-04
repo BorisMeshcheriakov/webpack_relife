@@ -1,0 +1,30 @@
+.toolbar {
+	flex-shrink: 0;
+	height: 60px;
+	margin: 0 20px;
+	padding: 0 10px 0 15px;
+	display: flex;
+	justify-content: space-between;
+
+	&__left {
+		display: flex;
+		align-items: center;
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+
+		& > * {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.toolbar {
+		margin: 0 10px;
+	}
+}

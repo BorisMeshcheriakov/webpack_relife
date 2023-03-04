@@ -1,0 +1,43 @@
+@import 'resources/branding/colors';
+
+.card {
+	width: 276px;
+	min-width: auto;
+	height: 164px;
+	padding: 10px;
+	color: $dark_grey;
+
+	&__inner {
+		border: 1px solid $border;
+		border-radius: 4px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&.error {
+			border-color: $red;
+		}
+	}
+
+	&__button {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 24px;
+	}
+
+	&:hover {
+		button {
+			background: $blue;
+			border-color: $blue;
+			color: white;
+		}
+
+		.card__inner {
+			border-color: $blue;
+			color: $blue;
+		}
+	}
+}

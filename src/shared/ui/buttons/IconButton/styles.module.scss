@@ -1,0 +1,19 @@
+@import 'resources/branding/colors';
+
+.btn {
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+
+	&.outlined {
+		background: transparent;
+		border: 1px solid $dark_grey;
+		color: $dark_grey;
+	}
+
+	&:hover {
+		border: 1px solid $blue;
+		background: $blue;
+		color: white;
+	}
+}

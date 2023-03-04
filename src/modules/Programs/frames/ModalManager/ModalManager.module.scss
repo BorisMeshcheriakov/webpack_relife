@@ -1,0 +1,33 @@
+.toolbar {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0 10px 0 15px;
+	margin: 0 20px;
+	margin-bottom: 30px;
+
+	&__tabs,
+	&__buttons {
+		display: flex;
+	}
+
+	&__buttons {
+		align-items: center;
+
+		& > * {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__tab {
+		display: flex;
+		padding: 0 2px;
+
+		&.active {
+			color: #4198c5;
+		}
+	}
+}

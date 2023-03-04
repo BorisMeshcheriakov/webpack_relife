@@ -1,0 +1,20 @@
+.description {
+	// text-align: justify;
+	display: flex;
+
+	&__text {
+		height: 307px;
+		overflow-y: scroll;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.description {
+		flex-direction: column;
+		justify-content: flex-start;
+
+		&__text {
+			margin-top: 20px;
+		}
+	}
+}

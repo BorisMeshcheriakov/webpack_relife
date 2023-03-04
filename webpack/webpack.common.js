@@ -46,6 +46,10 @@ const resolve = {
 		modules: paths.modules,
 		shared: paths.shared,
 	},
+	fallback: {
+		'react/jsx-runtime': 'react/jsx-runtime.js',
+		'react/jsx-dev-runtime': 'react/jsx-dev-runtime.js',
+	},
 };
 
 const optimization = {

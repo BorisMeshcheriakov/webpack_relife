@@ -1,0 +1,25 @@
+.comment {
+	min-height: 444px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+
+	&__photo {
+		width: 150px;
+		height: 156px;
+		object-fit: cover;
+		border-radius: 4px;
+		margin-bottom: 27px;
+	}
+
+	&__name {
+		font-family: 'SFPro-Semibold';
+	}
+
+	&__title {
+		font-size: 18px;
+		margin-top: 16px;
+	}
+}

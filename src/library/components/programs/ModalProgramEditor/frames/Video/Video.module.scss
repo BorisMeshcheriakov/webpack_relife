@@ -1,0 +1,26 @@
+.videos {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 276px);
+	grid-gap: 12px;
+	gap: 12px;
+}
+
+.promoVideo {
+	display: flex;
+	flex-direction: column;
+	width: 276px;
+	min-width: auto;
+	height: 164px;
+	padding: 10px;
+}
+
+.uploader {
+	width: 276px;
+	height: 164px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+
+	&.error {
+		border: 1px solid #d32f2f;
+	}
+}

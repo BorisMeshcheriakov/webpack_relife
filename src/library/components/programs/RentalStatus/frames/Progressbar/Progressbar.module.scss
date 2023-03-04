@@ -1,0 +1,19 @@
+.progress {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	white-space: nowrap;
+
+	&__bar {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__number {
+		width: 40px;
+		display: flex;
+		justify-content: center;
+	}
+}

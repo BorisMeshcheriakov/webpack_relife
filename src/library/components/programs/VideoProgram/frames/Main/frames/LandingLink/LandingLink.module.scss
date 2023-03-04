@@ -1,0 +1,10 @@
+@import 'resources/branding/colors';
+
+.link {
+	color: $blue;
+	text-decoration: underline;
+
+	span {
+		padding-right: 10px;
+	}
+}

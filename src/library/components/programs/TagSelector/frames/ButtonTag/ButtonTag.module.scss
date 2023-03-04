@@ -1,0 +1,79 @@
+@import 'resources/branding/colors';
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	background-color: $bgrey;
+	border-radius: 20px;
+
+	&.number {
+		width: 64px;
+	}
+
+	&.open {
+		background-color: $blue;
+
+		.badge {
+			color: #fff;
+		}
+
+		path {
+			fill: #fff;
+		}
+	}
+
+	&.error {
+		background-color: $red;
+
+		.badge {
+			color: #fff;
+		}
+
+		path {
+			fill: #fff;
+		}
+	}
+
+	.badge {
+		display: none;
+		margin: 2px 0 0 9px;
+		font-size: 18px;
+		line-height: 16px;
+		color: #616f82;
+
+		&.number {
+			display: block;
+		}
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.button:hover {
+		background-color: $blue;
+
+		.badge {
+			color: #fff;
+		}
+
+		path {
+			fill: #fff;
+		}
+	}
+
+	.button {
+		&.error:hover {
+			background-color: $red;
+
+			.badge {
+				color: #fff;
+			}
+
+			path {
+				fill: #fff;
+			}
+		}
+	}
+}

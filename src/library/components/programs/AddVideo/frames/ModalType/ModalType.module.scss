@@ -1,0 +1,28 @@
+.type {
+	display: flex;
+	flex-direction: column;
+
+	&__text {
+		display: flex;
+		justify-content: center;
+		padding: 50px 0;
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__button {
+		height: 35px;
+		width: 150px;
+		border: 1px solid #4198c5;
+		color: #4198c5;
+		border-radius: 4px;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+}

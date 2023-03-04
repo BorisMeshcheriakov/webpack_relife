@@ -1,0 +1,36 @@
+.share {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+
+	&__text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 130px;
+		padding: 0 10px;
+
+		span {
+			text-align: middle;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__button {
+		min-width: 150px;
+		height: 40px;
+		border: 1px solid #4198c5;
+		color: #4198c5;
+		border-radius: 4px;
+		padding: 0 10px;
+
+		&:hover {
+			background-color: #4198c5;
+			color: #fff;
+		}
+	}
+}

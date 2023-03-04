@@ -1,0 +1,41 @@
+.videos {
+	height: 100%;
+	// margin: -6px;
+	margin: -6px 14px 20px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.scroller {
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+
+	& > * {
+		margin: 6px;
+	}
+}
+
+@media screen and (max-width: 1240px) {
+	.videos {
+		align-items: center;
+	}
+	.scroller {
+		width: 870px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.scroller {
+		width: 580px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.scroller {
+		width: 290px;
+	}
+}

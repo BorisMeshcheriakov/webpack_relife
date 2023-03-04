@@ -1,0 +1,9 @@
+.nav {
+	color: #616f82;
+	padding: 0 7px;
+
+	&.active,
+	&:hover {
+		color: #4198c5;
+	}
+}

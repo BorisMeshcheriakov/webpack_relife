@@ -1,0 +1,30 @@
+.program {
+	height: 100%;
+	font-size: 14px;
+
+	&__content {
+		padding-top: 30px;
+		height: calc(100% + 30px);
+		min-height: calc(100% + 30px);
+		margin: 0 20px;
+	}
+
+	&__wrapper {
+		display: flex;
+		height: 100%;
+	}
+}
+
+.scroller {
+	height: calc(100% - 70px);
+	overflow-y: scroll;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+	.program {
+		&__wrapper {
+			flex-direction: column;
+		}
+	}
+}

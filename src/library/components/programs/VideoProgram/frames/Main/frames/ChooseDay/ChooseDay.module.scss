@@ -1,0 +1,31 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+	min-height: 444px;
+}
+
+.days {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+	max-width: 450px;
+
+	& > * {
+		padding: 5px;
+	}
+}
+
+.close {
+	position: absolute;
+	right: -40px;
+	top: -10px;
+
+	& > * {
+		color: #fff !important;
+	}
+}

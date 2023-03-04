@@ -1,0 +1,50 @@
+.landing {
+	margin: 0 20px;
+	h1 {
+		padding: 45px 100px 76px 100px;
+		margin: 0;
+		text-align: center;
+		font-family: 'SFPro-Semibold';
+		font-size: 40px;
+	}
+
+	h2 {
+		text-align: left;
+		font-size: 28px;
+		font-family: 'SFPro-Semibold';
+		padding: 24px 0;
+	}
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+
+	&__image {
+		width: 547px;
+		height: 307px;
+		flex-shrink: 0;
+	}
+}
+
+.author {
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	.description {
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-bottom: 20px;
+
+		&__image {
+			width: 100%;
+			height: 100%;
+		}
+
+		p {
+			padding: 20px 0 0 0;
+		}
+	}
+}

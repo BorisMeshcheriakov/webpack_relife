@@ -2,7 +2,7 @@ import {
 	Shop,
 	Statistics,
 	Events,
-	// 	Programs,
+	Programs,
 	// 	Clients,
 	// 	Schedules,
 	// 	Specialists,
@@ -26,10 +26,10 @@ export const components = [
 	// 	type: 'clients',
 	// 	component: Clients,
 	// },
-	// {
-	// 	type: 'video',
-	// 	component: Programs,
-	// },
+	{
+		type: 'video',
+		component: Programs,
+	},
 	// {
 	// 	type: 'schedules',
 	// 	component: Schedules,

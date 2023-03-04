@@ -1,0 +1,116 @@
+@import 'resources/branding/colors';
+
+.card {
+	display: flex;
+	flex-shrink: 0;
+	height: 106px;
+	padding: 0;
+	border-left: 3px solid transparent;
+
+	&__image {
+		flex: 0 0 161px;
+		width: 161px;
+		padding: 10px 0 10px 7px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top;
+			border-radius: 4px;
+		}
+	}
+
+	&__data {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		justify-content: space-between;
+		padding-left: 20px;
+	}
+
+	&__top {
+		display: flex;
+		margin-bottom: 3px;
+	}
+
+	&__bottom {
+		display: flex;
+		flex-grow: 1;
+		padding: 0 10px 10px 0;
+	}
+
+	&__description {
+		display: flex;
+	}
+
+	&__status {
+		display: flex;
+		flex: 0 0 auto;
+		align-items: flex-end;
+
+		.favorite {
+			display: flex;
+			justify-content: center;
+			width: 34px;
+		}
+	}
+
+	&__details {
+		display: flex;
+		flex-grow: 1;
+		align-items: flex-end;
+	}
+
+	&__title {
+		flex-grow: 1;
+		padding-top: 10px;
+
+		h3 {
+			min-width: 100px;
+			max-width: 754px;
+			max-height: 42px;
+			margin-bottom: 2px;
+			overflow-y: scroll;
+		}
+
+		p {
+			max-height: 21px;
+			overflow-y: scroll;
+			font-size: 14px;
+			color: $dark_grey;
+		}
+	}
+
+	&__menu {
+		padding: 10px 10px 0 0;
+	}
+
+	&.hidden {
+		border-left: 3px solid #616f82;
+	}
+
+	&.moderation {
+		border-left: 3px solid #ec8532;
+	}
+
+	&.rejected {
+		border-left: 3px solid #f00;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.card {
+		flex-direction: column;
+		height: auto;
+
+		&__image {
+			width: auto;
+			padding: 10px 10px 10px 7px;
+		}
+
+		&__data {
+			padding-left: 7px;
+		}
+	}
+}

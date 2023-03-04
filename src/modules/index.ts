@@ -11,7 +11,7 @@ export { default as NotFound } from './NotFound';
 export { default as Loading } from './Loading';
 export { default as Cart } from './Cart';
 // export { default as Clients } from './Clients';
-// export { default as Programs } from './Programs';
+export { default as Programs } from './Programs';
 // export { default as Schedules } from './Schedules';
 // export { default as Specialists } from './Specialists';
 // export { default as Notifications } from './Notifications';

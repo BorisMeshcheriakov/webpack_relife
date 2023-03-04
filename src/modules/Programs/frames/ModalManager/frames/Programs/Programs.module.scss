@@ -1,0 +1,30 @@
+.programs {
+	height: 100%;
+	padding: 0 20px 20px;
+	overflow: auto;
+}
+
+.scroller {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	& > * {
+		transition: 0.3s;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+}
+
+.card {
+	display: flex;
+	flex: 0 0 164px;
+	flex-direction: column;
+	height: 164px;
+	border: 1px solid blue;
+}

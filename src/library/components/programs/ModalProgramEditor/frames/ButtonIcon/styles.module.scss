@@ -1,0 +1,36 @@
+@import 'resources/branding/colors';
+
+.btn {
+	display: flex;
+	flex-shrink: 0;
+	color: $dark_grey;
+	font-size: 14px;
+
+	&__text {
+		line-height: 26px;
+		padding-right: 10px;
+	}
+
+	&__icon {
+		width: 26px;
+		height: 26px;
+		border-radius: 50%;
+		border: 1px solid $dark_grey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&:hover {
+		color: $blue;
+
+		.btn__icon {
+			border: 1px solid $blue;
+			svg {
+				path {
+					fill: $blue;
+				}
+			}
+		}
+	}
+}

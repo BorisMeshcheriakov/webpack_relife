@@ -1,0 +1,38 @@
+.image {
+	position: relative;
+	width: 224px;
+	height: 126px;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+
+	&:hover {
+		border: 1px solid #4198c5;
+	}
+
+	&__input {
+		display: none;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-grow: 1;
+	}
+
+	&__picture {
+		flex-shrink: 0;
+		width: 222px;
+		height: 124px;
+		cursor: pointer;
+		border-radius: 4px;
+		transition: 0.3s;
+		object-fit: cover;
+		object-position: center top;
+	}
+
+	&.error {
+		border: 1px solid #d32f2f;
+	}
+}

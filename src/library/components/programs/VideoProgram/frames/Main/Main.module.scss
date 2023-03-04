@@ -1,0 +1,28 @@
+.main {
+	position: relative;
+	padding-right: 10px;
+	flex: 0 1 805px;
+
+	&__wrapper {
+		padding: 10px;
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		min-height: 200px;
+	}
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 0 15px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.main {
+		padding-right: 0;
+		margin-bottom: 10px;
+	}
+}

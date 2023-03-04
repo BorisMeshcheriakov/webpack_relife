@@ -1,0 +1,31 @@
+.card {
+	height: 76px;
+	cursor: pointer;
+	padding: 10px;
+	display: flex;
+	border: 1px solid transparent;
+	font-size: 14px;
+	box-shadow: none;
+
+	&__image {
+		width: 100px;
+		height: 56px;
+		border-radius: 4px;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	&__title {
+		padding-left: 10px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 192px;
+	}
+
+	&:hover,
+	&.active {
+		background-color: #f1f2f4;
+		border: 1px solid #fff;
+	}
+}
