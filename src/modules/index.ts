@@ -17,6 +17,6 @@ export { default as Cart } from './Cart';
 // export { default as Notifications } from './Notifications';
 // export { default as ProgramPayment } from './ProgramPayment';
 export { default as Statistics } from './Statistics';
-// export { default as AdminPanel } from './AdminPanel';
+export { default as AdminPanel } from './AdminPanel';
 
 export * from './Support';

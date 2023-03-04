@@ -6,7 +6,7 @@ import {
 	// 	Clients,
 	// 	Schedules,
 	// 	Specialists,
-	// 	AdminPanel,
+	AdminPanel,
 } from 'modules';
 
 export const components = [
@@ -38,8 +38,8 @@ export const components = [
 	// 	type: 'specialists',
 	// 	component: Specialists,
 	// },
-	// {
-	// 	type: 'admin',
-	// 	component: AdminPanel,
-	// },
+	{
+		type: 'admin',
+		component: AdminPanel,
+	},
 ];
