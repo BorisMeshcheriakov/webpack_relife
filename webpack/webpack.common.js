@@ -27,7 +27,7 @@ const plugins = [htmlWebpackPlugin];
  * Shared modules.
  */
 const modules = {
-	rules: [fonts, css, esbuild],
+	rules: [babel, typeScript, fonts, css],
 };
 
 /**
@@ -42,6 +42,7 @@ const resolve = {
 		'@styles': paths.styles,
 		core: paths.core,
 		library: paths.library,
+		resources: paths.resources,
 	},
 };
 

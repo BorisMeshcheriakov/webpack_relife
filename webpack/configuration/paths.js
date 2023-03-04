@@ -15,4 +15,6 @@ module.exports = {
 	core: path.resolve(__dirname, '..', '..', 'src', 'core'),
 
 	library: path.resolve(__dirname, '..', '..', 'src', 'library'),
+
+	resources: path.resolve(__dirname, '..', '..', 'src', 'resources'),
 };

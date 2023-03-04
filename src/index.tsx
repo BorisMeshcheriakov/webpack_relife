@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { store } from 'core/redux/store';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
+import theme from 'core/theme';
+import { ThemeProvider } from '@mui/material';
 import './index.scss';
 
 import { disableReactDevTools } from '@fvilers/disable-react-devtools';
@@ -15,11 +17,13 @@ if (process.env.NODE_ENV === 'production') {
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Provider store={store}>
-			<Router>
-				<App />
-			</Router>
-		</Provider>
+		<ThemeProvider theme={theme}>
+			<Provider store={store}>
+				<Router>
+					<App />
+				</Router>
+			</Provider>
+		</ThemeProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
