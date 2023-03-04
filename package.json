@@ -104,6 +104,7 @@
 		"react-redux": "^8.0.5",
 		"react-router-dom": "5.2.0",
 		"react-text-mask": "^5.5.0",
+		"sanitize.css": "^13.0.0",
 		"text-mask-addons": "^3.8.0",
 		"yup": "^1.0.2"
 	}

@@ -1,0 +1,16 @@
+@import 'resources/branding/colors';
+
+@mixin blockShadow {
+	border-radius: 4px;
+	box-shadow: $shadow;
+	background-color: #fff;
+}
+
+@mixin buttonRound {
+	border-radius: 50%;
+
+	&:hover {
+		background-color: $blue;
+		color: #fff;
+	}
+}

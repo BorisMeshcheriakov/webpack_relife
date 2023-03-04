@@ -2,13 +2,13 @@ import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import {
 	Header,
 	RootModal,
+	Main,
 	// TechService,
 	// PaymentListener,
-	// Main,
-	// Profile,
+	Profile,
 	// SupportPage,
-	// NotFound,
-	// Loading,
+	NotFound,
+	Loading,
 	// Notifications,
 	// ProgramPayment,
 } from 'modules';
@@ -17,26 +17,26 @@ import { components } from './dynamicComponents';
 
 import { selectModules, selectModulesLoading } from 'library/redux/common';
 import { useAppSelector } from 'library/hooks/common/reduxTypedHooks';
-// import { useWebSettings } from 'library/hooks/common';
+import { useWebSettings } from 'library/hooks/common';
 
 const Routes = () => {
 	const modules = useAppSelector(selectModules);
 	const modulesLoading = useAppSelector(selectModulesLoading);
-	// const { logo_url } = useWebSettings();
+	const { logo_url } = useWebSettings();
 	const { push } = useHistory();
 
-	// const redirectTo = () => {
-	// 	let link = '/';
-	// 	let filteredByVisibility = modules.filter(
-	// 		(module) => module.permissions.indexOf('view_module') !== -1
-	// 	);
+	const redirectTo = () => {
+		let link = '/';
+		let filteredByVisibility = modules.filter(
+			(module) => module.permissions.indexOf('view_module') !== -1
+		);
 
-	// 	if (filteredByVisibility.length) {
-	// 		link = `/${filteredByVisibility[0].code}`;
-	// 	}
+		if (filteredByVisibility.length) {
+			link = `/${filteredByVisibility[0].code}`;
+		}
 
-	// 	return link;
-	// };
+		return link;
+	};
 
 	/**
 	 * При создании ссылки на экране в ios и android, к ссылке добавляется
@@ -70,19 +70,19 @@ const Routes = () => {
 				 * на сторонний ресурс - отключаем главную страницу и делаем редирект
 				 * на первый доступный для просмотра модуль
 				 */}
-				{/* {logo_url ? (
+				{logo_url ? (
 					<Redirect exact from="/" to={redirectTo()} />
 				) : (
 					<Route path="/" exact render={() => <Main />} />
-				)} */}
+				)}
 
-				{/* <Route path="/personal" render={() => <Profile />} /> */}
+				<Route path="/personal" render={() => <Profile />} />
 				{/* <Route path="/support" render={() => <SupportPage />} /> */}
 				{/* <Route exact path="/technical-service" render={() => <TechService />} /> */}
 				{/* <Route path="/payment" exact component={PaymentListener} /> */}
 				{/* <Route exact path="/program-payment" component={ProgramPayment} /> */}
 				{/* <Route path="/notifications" exact render={() => <Notifications />} /> */}
-				{/* <Route path="*" render={() => (modulesLoading ? <Loading /> : <NotFound />)} /> */}
+				<Route path="*" render={() => (modulesLoading ? <Loading /> : <NotFound />)} />
 			</Switch>
 		</>
 	);

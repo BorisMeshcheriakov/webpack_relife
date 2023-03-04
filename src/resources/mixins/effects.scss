@@ -1,0 +1,26 @@
+@mixin hover($background, $color) {
+	&:hover {
+		background-color: $background;
+		color: $color;
+		border-color: $background;
+
+		svg {
+			path {
+				fill: $color;
+				stroke: $color;
+			}
+		}
+	}
+}
+
+@mixin svgInverted($background, $color) {
+	svg {
+		path {
+			fill: $background;
+			stroke: $color;
+		}
+	}
+}
+
+// adaptive mobile effects //
+// @media (hover: hover) and (pointer: fine) {}

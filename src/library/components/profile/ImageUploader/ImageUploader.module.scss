@@ -1,0 +1,47 @@
+@import 'resources/mixins/flex';
+$radius: 4px;
+
+.image {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: $radius;
+}
+
+.input {
+	display: none;
+}
+
+.label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	border-radius: $radius;
+
+	&:hover {
+		.upload {
+			opacity: 0.8;
+		}
+	}
+}
+
+.upload {
+	@include flexRowCenter;
+	opacity: 0;
+	border-radius: $radius;
+	background-color: #8b8b8c;
+	position: absolute;
+	height: 180px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: 300ms;
+
+	&__circle {
+		@include flexRowCenter;
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		background-color: #fff;
+	}
+}

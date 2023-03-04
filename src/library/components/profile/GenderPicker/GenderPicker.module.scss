@@ -1,0 +1,57 @@
+@import 'resources/branding/colors';
+@import 'resources/mixins/flex';
+$width: 100%;
+
+.wrapper {
+	@include flexRowCenter;
+	position: relative;
+	width: $width;
+	height: 40px;
+	border: 1px solid $border;
+	border-radius: 4px;
+	transition: 300ms;
+
+	&:hover,
+	&:focus {
+		border: 1px solid $blue;
+	}
+
+	& > * {
+		outline: none;
+	}
+
+	select {
+		padding: 0 8px 0 8px;
+		width: $width;
+		border: none;
+		height: 38px;
+		border-radius: 4px;
+		appearance: none;
+		// Additional resets for further consistency
+		background-color: transparent;
+		border: none;
+		margin: 0;
+		width: 100%;
+		font-family: inherit;
+		font-size: 14px;
+		cursor: pointer;
+		line-height: inherit;
+	}
+
+	label {
+		position: absolute;
+		left: 10px;
+		top: -1px;
+		font-size: 12px;
+		color: $dark_grey;
+		background-color: #fff;
+		padding: 0 5px;
+		line-height: 2px;
+	}
+}
+
+.icon {
+	display: flex;
+	position: absolute;
+	right: 8px;
+}
