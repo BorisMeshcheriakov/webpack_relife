@@ -1,0 +1,68 @@
+@import 'resources/mixins/elements';
+
+.root {
+	@include blockShadow;
+	height: 112px;
+	background-color: #fff;
+	padding: 10px 15px 10px 10px;
+	display: grid;
+	grid-template-columns: 97px 1fr;
+	column-gap: 20px;
+}
+
+.image {
+	width: 97px;
+	height: 92px;
+	object-fit: contain;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	position: relative;
+}
+
+.data {
+	display: grid;
+	grid-template-rows: 1fr auto;
+
+	&__attributes {
+		display: flex;
+		overflow-x: hidden;
+
+		& > div {
+			margin-right: 20px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__footer {
+		display: grid;
+		grid-template-columns: 1fr auto;
+	}
+
+	&__price {
+		font-size: 18px;
+		font-family: 'SFPro-Semibold';
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.root {
+		height: 122px;
+		align-items: center;
+	}
+	.data {
+		&__attributes {
+			display: grid;
+			grid-template-rows: 1fr;
+			grid-template-columns: 1fr;
+		}
+
+		&__price {
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+}

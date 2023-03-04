@@ -9,7 +9,7 @@ import ButtonLogin from 'library/components/header/ButtonLogin';
 //import ButtonSupport from 'library/components/header/ButtonSupport';
 import Profile from './frames/Profile';
 import Logo from 'library/components/header/Logo';
-//import ButtonCart from 'library/components/header/ButtonCart';
+import ButtonCart from 'library/components/header/ButtonCart';
 
 import st from './index.module.scss';
 import cn from 'classnames';
@@ -54,7 +54,7 @@ const MenuDesktop = () => {
 			<div className={st.menu}>
 				{/* {isAuth && <ButtonNotifications />} */}
 				{/* <ButtonSupport /> */}
-				{/* {isAuth && links.showCart && <ButtonCart />} */}
+				{isAuth && links.showCart && <ButtonCart />}
 				{isAuth ? <Profile /> : <ButtonLogin />}
 			</div>
 		</div>

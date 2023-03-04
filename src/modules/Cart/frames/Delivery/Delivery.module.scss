@@ -1,0 +1,35 @@
+@import 'resources/branding/colors.scss';
+
+.address {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 40%;
+}
+
+.map {
+	position: relative;
+	width: 100%;
+}
+
+.method {
+	background-color: aqua;
+}
+
+.error {
+	&:first-child {
+		margin-top: 20px;
+	}
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: $red;
+}
+
+@media screen and (max-width: 1024px) {
+	.address {
+		padding: 0;
+	}
+	.map {
+		width: calc(100vw - 70px);
+		height: 285px;
+	}
+}

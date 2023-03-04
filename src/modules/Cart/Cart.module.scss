@@ -1,0 +1,51 @@
+@import 'resources/branding/colors.scss';
+
+.wrapper {
+	padding: 0 20px 0 20px;
+	overflow-y: scroll;
+
+	form {
+		padding-bottom: 20px;
+	}
+}
+
+.block {
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: $shadow;
+}
+
+.client {
+	margin-bottom: 12px;
+	display: flex;
+}
+
+.delivery {
+	margin-bottom: 12px;
+	display: grid;
+	grid-template-columns: 1fr 666px;
+	column-gap: 30px;
+}
+
+.delivery {
+	height: 345px;
+	padding: 30px 15px;
+}
+
+.subtitle {
+	font-size: 20px;
+	margin: 0 0 12px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	.delivery {
+		height: auto;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 285px;
+		row-gap: 10px;
+	}
+
+	.wrapper {
+		padding: 0 20px 50px 20px;
+	}
+}

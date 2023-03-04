@@ -1,0 +1,30 @@
+@import 'resources/branding/colors.scss';
+
+.price {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 38px;
+	&__main {
+		color: $blue;
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	&__rejected {
+		color: $dark_grey;
+		font-size: 16px;
+		right: 0;
+		top: 0;
+		white-space: nowrap;
+		text-decoration: line-through;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.price {
+		&__main {
+			margin-left: 0;
+		}
+	}
+}

@@ -3,10 +3,10 @@ import useMenulinks from 'library/hooks/header/useMenuLinks';
 import useUser from 'library/hooks/user/useUser';
 
 //import ButtonLogin from 'library/components/header/ButtonLogin';
-//import ButtonSupport from 'library/components/header/ButtonSupport';
+import ButtonSupport from 'library/components/header/ButtonSupport';
 import Icon from 'library/components/header/Icon';
 import Logo from 'library/components/header/Logo';
-//import ButtonCart from 'library/components/header/ButtonCart';
+import ButtonCart from 'library/components/header/ButtonCart';
 import BurgerButton from './frames/BurgerButton';
 
 //import { ButtonNotifications } from 'library/components/header';
@@ -33,9 +33,9 @@ const MenuMobile = () => {
 						</div>
 					)} */}
 
-					{/* <ButtonSupport /> */}
+					<ButtonSupport />
 
-					{/* {isAuth && links.showCart && <ButtonCart hideMenu={links.hideMenu} />} */}
+					{isAuth && links.showCart && <ButtonCart hideMenu={links.hideMenu} />}
 					{/* {!isAuth && <ButtonLogin />} */}
 				</div>
 			</div>

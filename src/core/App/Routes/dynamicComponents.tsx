@@ -1,5 +1,5 @@
 import {
-	//Shop,
+	Shop,
 	Statistics,
 	// 	Events,
 	// 	Programs,
@@ -14,10 +14,10 @@ export const components = [
 		type: 'statistics',
 		component: Statistics,
 	},
-	// {
-	// 	type: 'store',
-	// 	component: Shop,
-	// },
+	{
+		type: 'store',
+		component: Shop,
+	},
 	// {
 	// 	type: 'events',
 	// 	component: Events,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAppSelector } from 'library/hooks/common/reduxTypedHooks';
 
-// import { selectIsCartOpen } from 'library/redux/cart';
+import { selectIsCartOpen } from 'library/redux/cart';
 import {
 	selectOutOpen,
 	selectAuthOpen,
@@ -13,11 +13,7 @@ import {
 	selectFrameModal,
 } from 'library/redux/modal';
 
-import {
-	Authentication,
-	SupportModal,
-	// Cart
-} from 'modules';
+import { Authentication, SupportModal, Cart } from 'modules';
 import {
 	ModalOut,
 	ModalDialog,
@@ -33,7 +29,7 @@ const RootModal: React.FC = () => {
 	const outOpen = useAppSelector(selectOutOpen);
 	const notifyOpen = useAppSelector(selectNotifyOpen);
 	const dialogOpen = useAppSelector(selectDialogOpen);
-	// const cartOpen = useAppSelector(selectIsCartOpen);
+	const cartOpen = useAppSelector(selectIsCartOpen);
 	const supportOpen = useAppSelector(selectSupportOpen);
 	const moderationOpen = useAppSelector(selectModerationOpen);
 	const popupVisible = useAppSelector(selectIsPopupVisible);
@@ -53,7 +49,7 @@ const RootModal: React.FC = () => {
 			)}
 			{dialogOpen && <ModalDialog />}
 			{notifyOpen && <ModalInfo />}
-			{/* {cartOpen && <Cart />} */}
+			{cartOpen && <Cart />}
 			{supportOpen && <SupportModal />}
 			{moderationOpen && <ModalModeration />}
 			{popupVisible && <Popup />}

@@ -1,0 +1,29 @@
+@import 'resources/branding/colors';
+
+.order {
+	overflow: hidden;
+
+	&__productTitle {
+		max-width: 30vw;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		color: #1c1d1d;
+		margin: -2px 0 0 0;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+
+		span {
+			color: $blue;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.order {
+		&__productTitle {
+			max-width: calc(100vw - 80px);
+		}
+	}
+}

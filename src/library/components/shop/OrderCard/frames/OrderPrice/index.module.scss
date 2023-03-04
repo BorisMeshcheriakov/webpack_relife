@@ -1,0 +1,23 @@
+.order {
+	&__price {
+		display: flex;
+		margin-bottom: 2px;
+
+		&__text {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 17px;
+			color: #6c7a8c;
+		}
+
+		&__price {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 17px;
+			color: #1c1d1d;
+			margin-left: 3px;
+		}
+	}
+}

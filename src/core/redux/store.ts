@@ -3,8 +3,8 @@ import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import common from 'library/redux/common';
 import users from 'library/redux/users';
 import modals from 'library/redux/modal';
-// import shop from 'library/redux/shop';
-// import cart from 'library/redux/cart';
+import shop from 'library/redux/shop';
+import cart from 'library/redux/cart';
 // import events from 'library/redux/events';
 // import programs from 'library/redux/programs';
 // import schedules from 'library/redux/schedules';
@@ -18,8 +18,8 @@ export const store = configureStore({
 		common,
 		users,
 		modals,
-		// shop,
-		// cart,
+		shop,
+		cart,
 		// events,
 		// programs,
 		// schedules,

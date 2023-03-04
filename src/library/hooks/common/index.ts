@@ -6,6 +6,6 @@ export { default as useLoadModules } from './useLoadModules';
 export { default as useWebSettings } from './useWebSettings';
 export { default as useLoadCommonSettings } from './useLoadCommonSettings';
 export { default as useCommonSettings } from './useCommonSettings';
-// export { default as useDialog } from './useDialog';
+export { default as useDialog } from './useDialog';
 // export { default as useClearCookie } from './useClearCookie';
-// export { default as useCertificateMessage } from './useCertificateMessage';
+export { default as useCertificateMessage } from './useCertificateMessage';

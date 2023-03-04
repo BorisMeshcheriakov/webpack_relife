@@ -1,0 +1,135 @@
+@import 'resources/branding/colors.scss';
+
+.card {
+	position: relative;
+	display: flex;
+	height: 164px;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	background: white;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px rgb(19 19 19 / 10%);
+
+	&:last-child {
+		margin-bottom: 12px;
+	}
+
+	&.error {
+		border: 1px solid $red;
+	}
+
+	&__image {
+		width: 153px;
+		padding: 5px;
+		border: 1px solid $border;
+		border-radius: 4px;
+		object-fit: contain;
+	}
+
+	&__information {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		justify-content: space-between;
+		padding-left: 26px;
+	}
+
+	&__close {
+		position: absolute;
+		right: 15px;
+	}
+
+	&__price {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__details {
+		display: flex;
+		align-items: center;
+	}
+
+	&__attributes {
+		padding: 5px 0;
+		display: flex;
+	}
+
+	&__available {
+		display: flex;
+		align-items: center;
+		padding: 0 20px;
+
+		.quantity__text {
+			margin-right: 10px;
+		}
+	}
+
+	&__quantity {
+		display: flex;
+		align-items: center;
+
+		&_title {
+			display: flex;
+			min-width: 120px;
+		}
+
+		&_input {
+			max-width: 155px;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.card {
+		display: grid;
+		row-gap: 10px;
+		height: auto;
+
+		&__title {
+			font-family: SFPro-Semibold;
+		}
+
+		&__close {
+			top: 10px;
+		}
+
+		&__image {
+			justify-self: center;
+			height: 142px;
+		}
+
+		&__quantity {
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		&__information {
+			display: grid;
+			row-gap: 10px;
+			justify-content: normal;
+			width: 100%;
+			padding-left: 0;
+			overflow-x: scroll;
+		}
+
+		&__attributes {
+			flex-direction: column;
+			margin: 0;
+		}
+
+		&__details {
+			display: grid;
+			row-gap: 10px;
+		}
+
+		&__price {
+			align-self: flex-end;
+		}
+
+		&__available {
+			justify-content: space-between;
+			padding: 0 5px 0 0;
+		}
+	}
+}

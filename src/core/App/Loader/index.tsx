@@ -4,14 +4,14 @@ import {
 	useLoadModules,
 	useLoadWebSettings,
 } from 'library/hooks/common';
-// import { useLoadUser } from 'library/hooks/user';
-// import { useLoadCart } from 'library/hooks/cart';
+import { useLoadUser } from 'library/hooks/user';
+import { useLoadCart } from 'library/hooks/cart';
 // import { useLoadNotifications } from 'library/hooks/notifications';
 
 const Loader = () => {
-	// useLoadUser();
+	useLoadUser();
 	useLoadModules();
-	// useLoadCart();
+	useLoadCart();
 	useLoadWebSettings();
 	// useLoadNotifications();
 	useLoadCommonSettings();

@@ -1,0 +1,31 @@
+@import 'resources/branding/colors';
+
+.price {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 38px;
+
+	&__main {
+		margin-left: 10px;
+		font-size: 20px;
+		color: $blue;
+	}
+
+	&__rejected {
+		top: 0;
+		right: 0;
+		font-size: 16px;
+		color: $dark_grey;
+		text-decoration: line-through;
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.price {
+		&__main {
+			margin-left: 0;
+		}
+	}
+}

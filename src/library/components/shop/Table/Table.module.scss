@@ -1,0 +1,80 @@
+@import 'resources/branding/colors';
+
+.tables {
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+	font-size: 14px;
+	position: relative;
+	white-space: nowrap;
+	z-index: 1;
+}
+
+.list {
+	position: absolute;
+	display: none;
+	box-shadow: 0 1px 4px rgba(51, 51, 51, 0.25);
+	right: 0;
+	bottom: 0;
+	transform: translateY(100%);
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 15px 24px;
+	grid-row-gap: 20px;
+	overflow: scroll;
+
+	&.active {
+		display: grid;
+	}
+}
+
+.table {
+	&__title {
+		text-align: center;
+		font-family: 'SFPro-Semibold';
+		font-size: 16px;
+	}
+
+	tr {
+		text-align: center;
+
+		td {
+			min-width: 85px;
+			height: 38px;
+			white-space: nowrap;
+			border: 1px solid $border;
+		}
+	}
+}
+
+.button {
+	color: $dark_grey;
+	text-decoration: underline;
+	height: 32px;
+
+	span {
+		margin-right: 22px;
+	}
+}
+
+.icon {
+	transition: 300ms;
+
+	&.active {
+		transform: rotate(180deg);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.tables {
+		justify-content: center;
+	}
+
+	.list {
+		top: 32px;
+		bottom: auto;
+		right: 50%;
+		transform: translateX(50%);
+		max-width: calc(100vw - 20px);
+	}
+}

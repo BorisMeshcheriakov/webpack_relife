@@ -1,0 +1,55 @@
+@mixin title {
+	display: flex;
+	align-items: center;
+}
+
+.attribute {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-right: 10px;
+
+	&__title {
+		width: 120px;
+		height: 34px;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		@include title;
+		justify-content: flex-start;
+	}
+
+	&__value {
+		height: 34px;
+		min-width: 34px;
+		border-radius: 4px;
+		background-color: #f1f2f4;
+		padding: 0 5px;
+		@include title;
+		justify-content: center;
+	}
+}
+
+.color {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	min-width: 34px;
+	height: 34px;
+	border-radius: 4px;
+
+	&__background {
+		width: 30px;
+		height: 30px;
+		border-radius: 4px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.attribute {
+		justify-content: space-between;
+		margin-right: 0;
+		margin-top: 10px;
+	}
+}

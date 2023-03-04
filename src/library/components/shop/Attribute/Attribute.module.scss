@@ -1,0 +1,21 @@
+.root {
+	color: #5c6c82;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+
+	& > span {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&:first-child {
+			margin-right: 14px;
+		}
+	}
+}
+.color {
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	border: 1px solid;
+	box-shadow: inset 0px 0px 0px 1px white;
+}
