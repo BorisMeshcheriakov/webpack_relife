@@ -17,4 +17,8 @@ module.exports = {
 	library: path.resolve(__dirname, '..', '..', 'src', 'library'),
 
 	resources: path.resolve(__dirname, '..', '..', 'src', 'resources'),
+
+	modules: path.resolve(__dirname, '..', '..', 'src', 'modules'),
+
+	shared: path.resolve(__dirname, '..', '..', 'src', 'shared'),
 };

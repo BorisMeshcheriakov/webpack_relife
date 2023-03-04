@@ -43,6 +43,8 @@ const resolve = {
 		core: paths.core,
 		library: paths.library,
 		resources: paths.resources,
+		modules: paths.modules,
+		shared: paths.shared,
 	},
 };
 

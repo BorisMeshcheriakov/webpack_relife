@@ -1,0 +1,35 @@
+@import 'resources/branding/colors';
+
+.dot {
+	z-index: 0 !important;
+	width: 8px;
+	height: 4px;
+	padding: 3px !important;
+	margin-top: 4px;
+	background-color: $red !important;
+	border: 2px solid white;
+	border-radius: 50% !important;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	color: $dark_grey;
+
+	&:hover {
+		background-color: $blue;
+		color: white;
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.btn:hover {
+		background-color: $blue;
+		color: white;
+	}
+}

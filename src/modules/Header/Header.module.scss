@@ -1,0 +1,10 @@
+@import 'resources/branding/colors.scss';
+
+.header {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	height: 50px;
+	background-color: #fff;
+	box-shadow: $shadowHeader;
+}

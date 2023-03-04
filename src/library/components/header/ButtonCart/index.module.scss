@@ -1,0 +1,36 @@
+@import 'resources/branding/colors.scss';
+
+.button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	color: $dark_grey;
+
+	&:hover {
+		background-color: $blue;
+		color: white;
+	}
+
+	&.active {
+		color: $blue;
+	}
+}
+
+.quantity {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $red;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	color: #fff;
+	top: 0;
+	right: 0;
+	font-size: 12px;
+}

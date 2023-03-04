@@ -1,42 +1,42 @@
 import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import {
-	TechService,
-	PaymentListener,
-	Main,
 	Header,
-	Profile,
-	SupportPage,
-	NotFound,
-	Loading,
-	RootModal,
-	Notifications,
-	ProgramPayment,
+	// TechService,
+	// PaymentListener,
+	// Main,
+	// Profile,
+	// SupportPage,
+	// NotFound,
+	// Loading,
+	// RootModal,
+	// Notifications,
+	// ProgramPayment,
 } from 'modules';
 import { components } from './dynamicComponents';
-import { ProtectedRoute } from 'library/components/common';
+// import { ProtectedRoute } from 'library/components/common';
 
 import { selectModules, selectModulesLoading } from 'library/redux/common';
 import { useAppSelector } from 'library/hooks/common/reduxTypedHooks';
-import { useWebSettings } from 'library/hooks/common';
+// import { useWebSettings } from 'library/hooks/common';
 
 const Routes = () => {
 	const modules = useAppSelector(selectModules);
 	const modulesLoading = useAppSelector(selectModulesLoading);
-	const { logo_url } = useWebSettings();
+	// const { logo_url } = useWebSettings();
 	const { push } = useHistory();
 
-	const redirectTo = () => {
-		let link = '/';
-		let filteredByVisibility = modules.filter(
-			(module) => module.permissions.indexOf('view_module') !== -1
-		);
+	// const redirectTo = () => {
+	// 	let link = '/';
+	// 	let filteredByVisibility = modules.filter(
+	// 		(module) => module.permissions.indexOf('view_module') !== -1
+	// 	);
 
-		if (filteredByVisibility.length) {
-			link = `/${filteredByVisibility[0].code}`;
-		}
+	// 	if (filteredByVisibility.length) {
+	// 		link = `/${filteredByVisibility[0].code}`;
+	// 	}
 
-		return link;
-	};
+	// 	return link;
+	// };
 
 	/**
 	 * При создании ссылки на экране в ios и android, к ссылке добавляется
@@ -47,10 +47,10 @@ const Routes = () => {
 	return (
 		<>
 			<Header />
-			<RootModal />
+			{/* <RootModal /> */}
 
 			<Switch>
-				{modules.map((module) => {
+				{/* {modules.map((module) => {
 					const component = components.find((component) => component.type === module.settings.type);
 					if (component) {
 						const Component = component.component;
@@ -63,28 +63,26 @@ const Routes = () => {
 						);
 					}
 					return <Route key={module.code} path={`/${module.code}`} render={() => <NotFound />} />;
-				})}
+				})} */}
 
-				{
-					/**
-					 * Если в глобальных настройках для лого указана ссылка перехода
-					 * на сторонний ресурс - отключаем главную страницу и делаем редирект
-					 * на первый доступный для просмотра модуль
-					 */
-					logo_url ? (
-						<Redirect exact from="/" to={redirectTo()} />
-					) : (
-						<Route path="/" exact render={() => <Main />} />
-					)
-				}
+				{/**
+				 * Если в глобальных настройках для лого указана ссылка перехода
+				 * на сторонний ресурс - отключаем главную страницу и делаем редирект
+				 * на первый доступный для просмотра модуль
+				 */}
+				{/* {logo_url ? (
+					<Redirect exact from="/" to={redirectTo()} />
+				) : (
+					<Route path="/" exact render={() => <Main />} />
+				)} */}
 
-				<Route path="/personal" render={() => <Profile />} />
-				<Route path="/support" render={() => <SupportPage />} />
-				<Route exact path="/technical-service" render={() => <TechService />} />
-				<Route path="/payment" exact component={PaymentListener} />
-				<Route exact path="/program-payment" component={ProgramPayment} />
-				<Route path="/notifications" exact render={() => <Notifications />} />
-				<Route path="*" render={() => (modulesLoading ? <Loading /> : <NotFound />)} />
+				{/* <Route path="/personal" render={() => <Profile />} /> */}
+				{/* <Route path="/support" render={() => <SupportPage />} /> */}
+				{/* <Route exact path="/technical-service" render={() => <TechService />} /> */}
+				{/* <Route path="/payment" exact component={PaymentListener} /> */}
+				{/* <Route exact path="/program-payment" component={ProgramPayment} /> */}
+				{/* <Route path="/notifications" exact render={() => <Notifications />} /> */}
+				{/* <Route path="*" render={() => (modulesLoading ? <Loading /> : <NotFound />)} /> */}
 			</Switch>
 		</>
 	);

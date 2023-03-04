@@ -1,8 +1,8 @@
 import {
 	// useClearCookie,
-	// useLoadCommonSettings,
+	useLoadCommonSettings,
 	useLoadModules,
-	// useLoadWebSettings,
+	useLoadWebSettings,
 } from 'library/hooks/common';
 // import { useLoadUser } from 'library/hooks/user';
 // import { useLoadCart } from 'library/hooks/cart';
@@ -12,9 +12,9 @@ const Loader = () => {
 	// useLoadUser();
 	useLoadModules();
 	// useLoadCart();
-	// useLoadWebSettings();
+	useLoadWebSettings();
 	// useLoadNotifications();
-	// useLoadCommonSettings();
+	useLoadCommonSettings();
 	// useClearCookie();
 	return <></>;
 };

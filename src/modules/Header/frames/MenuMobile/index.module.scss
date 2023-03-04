@@ -1,0 +1,97 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+
+	&__menu {
+		flex-grow: 1;
+		padding: 0 10px;
+	}
+
+	&__logo {
+		display: flex;
+		flex-grow: 2;
+		justify-content: center;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-grow: 1;
+		justify-content: flex-end;
+		padding: 0 10px 0 0;
+	}
+
+  .btn {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 20px;
+    margin-right: 8px;
+  }
+}
+
+.list {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 50px);
+	overflow-y: scroll;
+	background-color: #fff;
+	border-top: 1px solid $border;
+}
+
+.profile {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	font-size: 16px;
+
+	&__photo {
+		width: 34px;
+		height: 34px;
+		border: 1px solid $blue;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	&__name {
+		margin-left: 14px;
+	}
+}
+
+.modules {
+	padding: 10px;
+	font-size: 16px;
+
+	&__link {
+		display: flex;
+		align-items: center;
+		height: 52px;
+		cursor: pointer;
+
+		svg {
+			display: flex;
+			width: 17px;
+		}
+
+		&:hover {
+			color: $blue;
+
+			svg {
+				path {
+					fill: $blue;
+				}
+			}
+		}
+	}
+
+	&__text {
+		margin-left: 14px;
+	}
+}
