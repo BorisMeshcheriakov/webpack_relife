@@ -35,7 +35,7 @@ const modules = {
  * Alias for @src set to paths.src directory.
  */
 const resolve = {
-	extensions: ['.js', '.jsx', '.json', '.ts', '.tsx', 'scss'],
+	extensions: ['.js', '.jsx', '.json', '.ts', '.tsx', 'css', 'scss'],
 	preferRelative: true,
 	alias: {
 		'@src': paths.src,

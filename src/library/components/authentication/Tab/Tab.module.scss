@@ -1,0 +1,10 @@
+@import 'resources/branding/colors';
+
+.tab {
+	border-bottom: 1px solid transparent;
+
+	&.active {
+		color: $blue;
+		border-bottom: 1px solid $blue;
+	}
+}

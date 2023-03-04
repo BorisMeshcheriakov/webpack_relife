@@ -1,0 +1,102 @@
+@import 'resources/branding/colors';
+
+.search {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		.input {
+			background-color: $blue ;
+		}
+
+		svg {
+			path {
+				fill: white;
+			}
+		}
+	}
+
+	&.open {
+    &:hover {
+      .input {
+        background-color: white ;
+      }
+    }
+
+		svg {
+			path {
+				fill: $blue;
+			}
+		}
+	}
+}
+
+.input {
+	width: 34px;
+	height: 34px;
+	color: $bgrey;
+	cursor: pointer;
+	background-color: $bgrey;
+	border: none;
+	border-radius: 17px;
+	transition: 0.2s;
+
+	&.open {
+		width: 206px;
+		padding: 0 30px;
+		color: inherit;
+		background-color: #fff;
+		border: 1px solid $blue;
+	}
+}
+
+.icon {
+	position: absolute;
+	left: 8px;
+	cursor: pointer;
+}
+
+.close {
+	position: absolute;
+	right: 10px;
+	transform: scale(0.7);
+
+	svg {
+		path {
+			fill: $dark_grey;
+			stroke: $dark_grey;
+		}
+	}
+}
+
+.popper {
+	.tooltip {
+		position: relative;
+		left: 9px;
+
+		&:focus {
+			display: none;
+		}
+
+		&:hover {
+			margin-left: 15px;
+		}
+
+		&.openT {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.input {
+		&.open {
+			width: calc(100vw - 30px);
+		}
+	}
+
+	.tooltip {
+		display: none;
+	}
+}

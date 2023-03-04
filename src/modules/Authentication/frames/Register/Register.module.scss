@@ -1,0 +1,53 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 20px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.agreement {
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: $dark_grey;
+
+	p {
+		color: $red;
+		font-size: 12px;
+		padding: 10px 0;
+		text-align: center;
+	}
+
+	&__link {
+		color: $blue;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+
+.passcode {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	p {
+		margin-bottom: 5px;
+		text-align: center;
+		white-space: nowrap;
+
+		&:last-child {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.timer {
+	align-self: center;
+	padding-top: 10px;
+}

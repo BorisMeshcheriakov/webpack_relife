@@ -1,0 +1,32 @@
+.button {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	outline: none;
+	z-index: 3;
+
+	&.white {
+		svg {
+			path {
+				fill: #fff;
+				stroke: #fff;
+			}
+		}
+	}
+
+	&.grey {
+		svg {
+			path {
+				fill: #616f82;
+				stroke: #616f82;
+			}
+		}
+	}
+}
+
+.icon {
+	display: flex;
+	transform: scale(0.8);
+}

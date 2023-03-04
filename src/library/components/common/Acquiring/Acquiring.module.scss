@@ -1,0 +1,40 @@
+@import 'resources/branding/colors';
+
+.frame {
+	position: absolute;
+	left: 0;
+	top: 64px;
+	height: calc(100% - 64px);
+	width: 100%;
+	z-index: 2;
+	padding: 0 10px 20px 10px;
+}
+
+.loader {
+	position: absolute;
+	left: 0;
+	top: 64px;
+	height: calc(100% - 64px);
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $bgrey;
+	border-radius: 4px;
+}
+
+.spinner {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 5px solid rgba(255, 255, 255, 0.1);
+	border-top-color: #09d;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}

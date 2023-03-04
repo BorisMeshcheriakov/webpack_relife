@@ -1,0 +1,43 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 24px auto 10px;
+	flex-grow: 1;
+
+	&__text {
+		width: 350px;
+		margin-bottom: 10px;
+		line-height: 26px;
+		text-align: center;
+		white-space: pre-line;
+
+		&_link {
+			font-size: 14px;
+			color: $blue;
+			text-decoration: underline;
+		}
+	}
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+
+	&__button {
+		width: 150px;
+		height: 36px;
+
+		&:first-child {
+			margin-right: 20px;
+		}
+	}
+}
+
+.overlay {
+	z-index: 1000;
+}

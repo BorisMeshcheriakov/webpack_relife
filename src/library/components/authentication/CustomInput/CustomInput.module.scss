@@ -1,0 +1,28 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 80px;
+
+	&__input {
+		height: 40px;
+	}
+
+	&__errorMessage {
+		display: flex;
+		justify-content: center;
+		height: 40px;
+
+		p {
+			align-self: center;
+			padding: 0 14px;
+			overflow: hidden;
+			font-size: 12px;
+			color: $red;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}

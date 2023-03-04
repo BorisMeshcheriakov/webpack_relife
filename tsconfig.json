@@ -13,6 +13,7 @@
 		"noImplicitAny": true,
 		"esModuleInterop": true,
 		"moduleResolution": "node",
+		"resolveJsonModule": true,
 		"importsNotUsedAsValues": "preserve",
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,

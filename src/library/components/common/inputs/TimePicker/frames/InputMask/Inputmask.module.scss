@@ -1,0 +1,73 @@
+@import 'resources/branding/colors';
+
+.inputMask {
+	min-width: 73px;
+	max-width: 230px;
+
+	&:focus-within {
+		p {
+			color: $blue !important;
+		}
+	}
+
+	&.error:focus-within {
+		p {
+			color: $red !important;
+		}
+	}
+
+	.wrapper__input {
+		display: flex;
+		height: 40px !important;
+		padding: 0 0 0 10px;
+		border: 1px solid $border !important;
+		border-radius: 5px;
+		border-radius: 5px;
+		transition: 300ms;
+
+		&:focus-within,
+		&:hover {
+			border-color: $blue !important;
+		}
+
+		.input {
+			width: 100% !important;
+			margin-right: 2px;
+			font-size: 16px;
+			border: none;
+			outline: none;
+
+			&:focus {
+				border-color: $blue !important;
+			}
+
+			&:disabled {
+				color: rgb(0 0 0 / 38%);
+				background-color: white !important;
+			}
+		}
+
+		&.error {
+			border-color: $red !important;
+		}
+	}
+
+	.label {
+		position: absolute;
+		z-index: 1;
+		padding: 0 3px;
+		margin-left: 10px;
+		font-size: 12px;
+		color: rgb(0 0 0 / 60%);
+		background-color: #fff;
+		transform: translateY(-50%);
+
+		&.error {
+			color: $red;
+		}
+
+		&.disabled {
+			color: rgb(0 0 0 / 38%);
+		}
+	}
+}

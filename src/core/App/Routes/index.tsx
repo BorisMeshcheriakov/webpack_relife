@@ -1,6 +1,7 @@
 import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import {
 	Header,
+	RootModal,
 	// TechService,
 	// PaymentListener,
 	// Main,
@@ -8,7 +9,6 @@ import {
 	// SupportPage,
 	// NotFound,
 	// Loading,
-	// RootModal,
 	// Notifications,
 	// ProgramPayment,
 } from 'modules';
@@ -47,7 +47,7 @@ const Routes = () => {
 	return (
 		<>
 			<Header />
-			{/* <RootModal /> */}
+			<RootModal />
 
 			<Switch>
 				{/* {modules.map((module) => {

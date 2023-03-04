@@ -1,0 +1,11 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	.btn {
+		color: $blue;
+		text-decoration: underline;
+		margin-bottom: 10px;
+	}
+}

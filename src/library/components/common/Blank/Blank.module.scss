@@ -1,0 +1,27 @@
+@import 'resources/branding/colors';
+
+.blank {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-grow: 1;
+	height: 100%;
+
+	&__thinking {
+		display: flex;
+	}
+
+	&__text {
+		color: #8792a3;
+		font-size: 14px;
+		margin-top: 14px;
+		max-width: 50%;
+		text-align: center;
+	}
+
+	&__icon {
+		display: flex;
+	}
+}

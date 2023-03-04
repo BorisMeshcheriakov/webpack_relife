@@ -1,0 +1,53 @@
+@import 'resources/branding/colors';
+
+.quantity {
+	display: grid;
+	grid-template-columns: 115px 138px;
+	align-items: center;
+
+	&__text {
+		width: 120px;
+	}
+
+	&__wrapper {
+		height: 38px;
+		display: flex;
+		border: 1px solid $border;
+		border-radius: 4px;
+		justify-content: space-between;
+		justify-self: center;
+		width: 128px;
+	}
+
+	&__input {
+		width: 35px;
+		text-align: center;
+		font-size: 16px;
+		-moz-appearance: textfield;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 34px;
+		width: 45px;
+	}
+
+	&__input {
+		border: none;
+	}
+
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.quantity {
+		width: 100%;
+		justify-content: space-between;
+	}
+}

@@ -46,7 +46,6 @@ const css = {
 		postcssLoader,
 		sassLoader,
 	],
-	exclude: /node_modules/,
 };
 
 module.exports = css;

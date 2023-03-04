@@ -1,0 +1,51 @@
+@import 'resources/branding/colors';
+
+.controller {
+	&:focus-within {
+		p {
+			color: $blue !important;
+		}
+	}
+
+	&.error:focus-within {
+		p {
+			color: $red !important;
+		}
+	}
+
+	.wrapper {
+		input {
+			border: 1px solid $border !important;
+
+			&:focus,
+			&:hover {
+				border-color: $blue !important;
+				box-shadow: none !important;
+			}
+		}
+
+		.input {
+			width: 100% !important;
+			height: 40px !important;
+
+			&.error {
+				border-color: $red !important;
+			}
+		}
+	}
+
+	.label {
+		position: absolute;
+		z-index: 1;
+		padding: 0 3px;
+		margin-left: 10px;
+		font-size: 12px;
+		color: rgb(0 0 0 / 60%);
+		background-color: #fff;
+		transform: translateY(-50%);
+
+		&.error {
+			color: $red;
+		}
+	}
+}

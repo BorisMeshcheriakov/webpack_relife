@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCookie } from 'setupCookie';
+import { getCookie } from '../../../setupCookie';
 import { useAppDispatch } from 'library/hooks/common/reduxTypedHooks';
 import { getIAm } from 'library/redux/users';
 

@@ -1,0 +1,25 @@
+@import 'resources/branding/colors';
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	width: 306px;
+	height: 350px;
+	font-size: 14px;
+	line-height: 17px;
+	outline: none;
+	transform: translate(-50%, -50%);
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(28 29 29 / 26%);
+	z-index: 20;
+}
