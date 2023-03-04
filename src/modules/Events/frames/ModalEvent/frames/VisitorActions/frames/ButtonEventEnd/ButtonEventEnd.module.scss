@@ -1,0 +1,22 @@
+@import 'resources/branding/colors.scss';
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 310px;
+	height: 40px;
+	background: #e4e4e4;
+	border-radius: 4px;
+	padding: 0 25px;
+
+	.title {
+		font-size: 20px;
+		line-height: 20px;
+		color: $dark_grey;
+	}
+
+	.svg {
+		margin-right: 10px;
+	}
+}

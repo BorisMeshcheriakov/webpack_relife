@@ -1,0 +1,15 @@
+.add {
+	color: #4198c5 !important;
+	border: 1px solid #4198c5 !important;
+	width: 26px;
+	height: 26px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.add {
+		&:hover {
+			color: #fff !important;
+			background-color: #4198c5 !important;
+		}
+	}
+}

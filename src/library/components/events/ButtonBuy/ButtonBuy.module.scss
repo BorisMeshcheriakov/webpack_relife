@@ -1,0 +1,49 @@
+@import 'resources/branding/colors';
+
+.button {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 183px;
+	height: 40px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 300ms;
+	padding: 0 24px;
+	transition: 0.3s;
+
+	&.active {
+		background-color: #4198c5;
+		color: #fff;
+		&:hover {
+			background-color: #50c3ff;
+		}
+	}
+	&.disabled {
+		width: 266px;
+		background-color: #e4e4e4;
+		font-size: 20px;
+		color: $dark_grey;
+	}
+
+	.icon {
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.button {
+		padding: 0 12px;
+		width: 159px;
+
+		&.disabled {
+			width: 200px;
+			padding: 0;
+			font-size: 18px;
+		}
+	}
+}

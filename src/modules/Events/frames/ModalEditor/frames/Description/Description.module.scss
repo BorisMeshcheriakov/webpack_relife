@@ -1,0 +1,9 @@
+.text {
+	border: 1px solid #cdcdcd !important;
+	border-radius: 4px;
+	transition: 0.3s;
+
+	&:focus-within {
+		border: 1px solid #4198c5 !important;
+	}
+}

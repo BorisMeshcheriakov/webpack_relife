@@ -1,0 +1,25 @@
+@import 'resources/branding/colors.scss';
+.events {
+	position: relative;
+	height: 100%;
+}
+
+.toolbar {
+	display: flex;
+	flex-direction: column;
+}
+
+.workspace {
+	position: relative;
+	height: calc(100vh - 150px);
+	overflow-y: scroll;
+}
+
+@keyframes visible {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

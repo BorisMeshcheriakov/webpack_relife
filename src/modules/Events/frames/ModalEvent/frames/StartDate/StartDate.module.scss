@@ -1,0 +1,17 @@
+.wrapper{
+    display: flex;
+    .dateItem{
+        display: flex;
+        margin-right: 12px;
+        align-items: center;
+        .icon{
+            margin-right: 10px;
+            height: 28px;
+        }
+        .value{
+            font-size: 20px;
+            color: #161718;
+            font-weight: 300;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.datetime {
+	&__add {
+		position: absolute;
+		right: 0;
+		top: 30px;
+	}
+
+	& > div {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.date {
+	display: flex;
+	padding-right: 30px;
+
+	& > * {
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.datetime {
+		h3 {
+			width: 390px;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.datetime {
+		h3 {
+			width: 290px;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.copy {
+	width: 530px;
+	height: 50px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: rgba(22, 23, 24, 0.44);
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 50px;
+	outline: none;
+	position: absolute;
+	opacity: 0;
+	animation: modal 3s ease;
+	z-index: 101;
+	bottom: -60px;
+}
+
+@keyframes modal {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	65% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 603px) {
+	.copy {
+		width: 100%;
+	}
+}

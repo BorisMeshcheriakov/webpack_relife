@@ -1,0 +1,39 @@
+.button {
+	display: flex;
+	align-items: center;
+	margin: 0 auto 0 30px;
+	border: none;
+	background-color: transparent;
+	color: #4198c5;
+	cursor: pointer;
+	transition: 300ms;
+
+	&:hover {
+		.wrapper {
+			background-color: #4198c5;
+		}
+
+		.icon {
+			path {
+				fill: #fff;
+			}
+		}
+	}
+}
+
+.wrapper {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	margin-left: 10px;
+	border: 1px solid #4198c5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 300ms;
+}
+
+.icon {
+	margin-bottom: 2px;
+	transition: 300ms;
+}

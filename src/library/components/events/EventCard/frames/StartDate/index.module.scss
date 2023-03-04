@@ -1,0 +1,15 @@
+.wrapper{
+    display: flex;
+    .dateItem{
+        display: flex;
+        margin-right: 12px;
+        align-items: flex-end;
+        .icon{
+            margin-right: 6px;
+        }
+        .value{
+            font-size: 14px;
+            color: #161718;
+        }
+    }
+}

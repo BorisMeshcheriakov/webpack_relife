@@ -1,7 +1,7 @@
 import {
 	Shop,
 	Statistics,
-	// 	Events,
+	Events,
 	// 	Programs,
 	// 	Clients,
 	// 	Schedules,
@@ -18,10 +18,10 @@ export const components = [
 		type: 'store',
 		component: Shop,
 	},
-	// {
-	// 	type: 'events',
-	// 	component: Events,
-	// },
+	{
+		type: 'events',
+		component: Events,
+	},
 	// {
 	// 	type: 'clients',
 	// 	component: Clients,

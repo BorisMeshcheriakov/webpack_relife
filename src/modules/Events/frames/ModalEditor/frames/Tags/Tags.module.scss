@@ -1,0 +1,11 @@
+.input {
+	&:hover {
+		& > fieldset {
+			border-color: #4198c5 !important;
+		}
+	}
+}
+
+.tags {
+	padding-bottom: 20px !important;
+}

@@ -5,7 +5,7 @@ import users from 'library/redux/users';
 import modals from 'library/redux/modal';
 import shop from 'library/redux/shop';
 import cart from 'library/redux/cart';
-// import events from 'library/redux/events';
+import events from 'library/redux/events';
 // import programs from 'library/redux/programs';
 // import schedules from 'library/redux/schedules';
 // import specialists from 'library/redux/specialists';
@@ -20,7 +20,7 @@ export const store = configureStore({
 		modals,
 		shop,
 		cart,
-		// events,
+		events,
 		// programs,
 		// schedules,
 		// specialists,

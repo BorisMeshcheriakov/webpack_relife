@@ -1,0 +1,144 @@
+.buy {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex-grow: 1;
+	position: relative;
+	border-radius: 4px;
+	outline: none;
+	background-color: #f1f2f4;
+	min-width: 375px;
+}
+
+.head {
+	position: relative;
+	height: 60px;
+	padding: 0 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f1f2f4;
+	border-radius: 4px 4px 0 0;
+
+	&__close {
+		position: absolute;
+		right: -40px;
+		top: -10px;
+
+		&_btn {
+			color: #fff !important;
+		}
+	}
+}
+
+.participant {
+	min-height: 268px;
+	background-color: #f9f9f9;
+	margin-bottom: 10px;
+	padding-bottom: 51px;
+	flex-grow: 1;
+
+	h3 {
+		font-size: 18px;
+		margin: 24px auto 0 30px;
+		padding: 0;
+		font-family: 'SFPro-Semibold';
+	}
+
+	&__wrapper {
+		margin: 0 30px;
+		padding-top: 9px;
+		max-height: 504px;
+		min-height: 100px;
+		overflow: scroll;
+		& > div {
+			margin-bottom: 12px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.card {
+	position: relative;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 15px 0 20px;
+	border-radius: 4px;
+	box-shadow: 0 0 4px rgba(51, 51, 51, 0.1);
+
+	& > * {
+		&:not(&:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	&__remove {
+		max-height: 40px;
+	}
+}
+
+.order {
+	display: flex;
+	flex-direction: column;
+	background-color: #f9f9f9;
+	border-radius: 0 0 4px 4px;
+}
+
+.checkout {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 40px;
+}
+
+@media screen and (max-width: 1024px) {
+	.head {
+		justify-content: flex-end;
+		&__close {
+			margin-left: 20px;
+			width: 40px;
+			position: static;
+			right: 0;
+			top: 0;
+			border-radius: 50%;
+			background-color: #fff;
+			&:hover {
+				background-color: #4198c5 !important;
+				color: #fff !important;
+			}
+
+			&_btn {
+				color: #616f82 !important;
+				&:hover {
+					color: #fff !important;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.card {
+		height: 235px;
+		flex-direction: column;
+
+		padding: 20px 40px 0 20px;
+
+		&__remove {
+			max-height: 40px;
+			position: absolute !important;
+			top: 20px;
+			right: 0;
+		}
+	}
+
+	.checkout {
+		display: flex;
+		justify-content: space-between;
+		margin: 20px 30px;
+	}
+}

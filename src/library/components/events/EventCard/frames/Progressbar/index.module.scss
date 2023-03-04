@@ -1,0 +1,35 @@
+.progressbar {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	height: 100%;
+
+	&__group {
+		margin-top: auto;
+		display: flex;
+		align-items: baseline;
+		flex-shrink: 0;
+	}
+
+	&__title {
+		display: inline-block;
+		font-size: 14px;
+		color: #616f82;
+		margin-right: 24px;
+
+		@media screen and (max-width: 1400px) {
+			font-size: 11px;
+		}
+	}
+
+	&__image {
+		width: 26px;
+		height: 26px;
+		font-family: 'SFPro-Semibold';
+
+		@media screen and (max-width: 1400px) {
+			width: 21px;
+			height: 21px;
+		}
+	}
+}

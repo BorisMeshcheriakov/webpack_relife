@@ -1,0 +1,48 @@
+@import 'resources/branding/colors';
+
+.main__tag {
+	height: 45px;
+	display: flex;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+
+	.checkBox__wrapper {
+		width: 46px !important;
+		height: 100%;
+	}
+
+	.checkBox {
+		appearance: none;
+		width: 20px;
+		height: 20px;
+		transform: translateX(65%) translateY(60%);
+	}
+
+	.checkBox:checked::after {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background: url('../../../../../../../../resources/icons/events/Checked.svg');
+	}
+
+	.title {
+		width: 484px;
+		padding-left: 6px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid $bgrey;
+		color: $dark_grey;
+		&.active {
+			color: $blue;
+		}
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.title {
+		margin-left: 20px;
+	}
+}

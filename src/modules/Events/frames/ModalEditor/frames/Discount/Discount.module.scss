@@ -1,0 +1,51 @@
+.discount {
+	position: relative;
+	& > div {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__card {
+		position: relative;
+		display: flex;
+
+		.price {
+			max-width: 242px;
+			min-width: 82px;
+		}
+
+		& > * {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__close {
+		position: absolute;
+		right: 0;
+	}
+
+	&__add {
+		position: absolute;
+		right: 0;
+		top: 30px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.discount {
+		&__card {
+			padding-right: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.discount {
+		&__card {
+			flex-direction: column;
+		}
+	}
+}

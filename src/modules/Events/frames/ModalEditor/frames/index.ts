@@ -1,0 +1,15 @@
+export { default as Title } from './Title';
+export { default as Description } from './Description';
+export { default as DateTime } from './DateTime';
+export { default as Type } from './Type';
+export { default as Cost } from './Cost';
+export { default as Discount } from './Discount';
+export { default as Video } from './Video';
+export { default as Coach } from './Coach';
+export { default as Block } from './Block';
+export { default as Address } from './Address';
+export { default as Contacts } from './Contacts';
+export { default as Status } from './Status';
+export { default as Tags } from './Tags';
+export { default as Actions } from './Actions';
+export { default as Prepayment } from './Prepayment';

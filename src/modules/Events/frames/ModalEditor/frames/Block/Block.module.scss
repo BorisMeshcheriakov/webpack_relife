@@ -1,0 +1,62 @@
+.blocks {
+	& > div {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__add {
+		position: absolute;
+		right: 0;
+		top: 30px;
+	}
+}
+
+.block {
+	display: flex;
+	padding-bottom: 20px !important;
+	padding-right: 0 !important;
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	&__title {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+
+		& > * {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__text {
+		display: flex;
+	}
+
+	&__description {
+		padding-left: 10px;
+		flex-grow: 1;
+	}
+
+	&__photo {
+		width: 192px;
+		height: 108px;
+	}
+}
+
+.textarea {
+	.MuiInputBase-root {
+		max-height: 112px;
+		overflow-y: scroll;
+	}
+
+	fieldset {
+		min-height: 112px;
+	}
+}

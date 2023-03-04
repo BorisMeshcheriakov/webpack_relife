@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    font-size: 20px;
+    color: #EC8532;
+    align-items: center;
+}
+.type{
+    display: flex;
+    margin-right: 11px;
+    .image{
+        display: flex;
+    }
+}
+.name{
+    font-weight: 300;
+}

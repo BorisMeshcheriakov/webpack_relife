@@ -1,0 +1,26 @@
+.wrapper {
+	cursor: pointer;
+	background: #4198c5;
+	color: white;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 0px 24px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	min-width: 200px;
+
+}
+@media screen and (max-width: 800px) {
+	.wrapper {
+		min-width: 180px;
+		padding: 0 13px;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.wrapper {
+		min-width: 160px;
+		padding: 0 5px;
+	}
+}

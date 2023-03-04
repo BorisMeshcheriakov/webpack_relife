@@ -1,0 +1,22 @@
+.tickets {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-right: 10px;
+}
+
+.number {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #4198c5;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}

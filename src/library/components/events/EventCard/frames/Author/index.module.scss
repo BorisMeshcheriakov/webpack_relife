@@ -1,0 +1,17 @@
+.eventAuthor{
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #616f82;
+  }
+
+  @media screen and (max-width: 480px) {
+    .eventAuthor {
+        font-size: 12px;
+        margin: 0;
+      }
+  }

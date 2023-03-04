@@ -1,0 +1,96 @@
+.coaches {
+	& > div {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__add {
+		position: absolute;
+		right: 0;
+		top: 30px;
+	}
+}
+
+.coach {
+	.wrapper {
+		display: flex;
+		padding-right: 20px !important;
+	}
+}
+
+.photo {
+	width: 178px;
+	height: 201px;
+  transition: 0.3s  ;
+}
+
+.delete {
+	position: absolute;
+	right: 0;
+}
+
+.info {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+
+	&__name {
+		display: flex;
+		justify-content: space-between;
+		& > * {
+			width: calc((100% / 3) - 5px);
+		}
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding-top: 10px;
+	}
+}
+
+.textarea {
+	.MuiInputBase-root {
+		max-height: 132px;
+		overflow-y: scroll;
+	}
+
+	fieldset {
+		min-height: 132px;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.coach {
+		.wrapper {
+			flex-direction: column;
+		}
+	}
+
+	.photo {
+		width: 100%;
+		height: calc(100vw - 300px);
+		margin-bottom: 20px;
+	}
+	.info {
+		margin: 0;
+		&__name {
+			flex-direction: column;
+			width: 100%;
+      & > * {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+      }
+		}
+	}
+}
+@media screen and (max-width: 490px) {
+  .photo {
+		width: 100%;
+		height: calc(100vw - 180px);
+		margin-bottom: 20px;
+	}
+}

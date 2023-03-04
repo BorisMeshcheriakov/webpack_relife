@@ -1,0 +1,56 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	line-height: 17px;
+	cursor: pointer;
+
+	&.publish {
+		color: $dark_grey;
+		.unpublished {
+			display: none;
+		}
+
+		&:hover {
+			p:first-child {
+				display: none;
+			}
+
+			.unpublished {
+				display: flex;
+				justify-content: flex-end;
+				width: 140px;
+				margin-right: 8px;
+			}
+
+			.icon {
+				display: none;
+				&__wrapper {
+					width: 0;
+				}
+			}
+		}
+	}
+	&.moderation {
+		color: $orange !important;
+	}
+	&.ban {
+		color: red;
+	}
+	&.close {
+		color: $dark_grey;
+	}
+}
+
+.icon {
+	width: 18px;
+	height: 16px;
+
+	&__wrapper {
+		width: 40px;
+		display: flex;
+		justify-content: center;
+	}
+}

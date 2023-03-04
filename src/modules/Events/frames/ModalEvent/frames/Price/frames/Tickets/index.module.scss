@@ -1,0 +1,40 @@
+.wrapper {
+	width: 190px;
+	min-width: 120px;
+	// flex-grow: 1;
+}
+.label {
+	color: #8792a3;
+	font-size: 14px;
+	text-align: center;
+	// margin-bottom: 5px;
+}
+.value {
+	font-family: 'SFPro-Semibold';
+	font-size: 36px;
+	line-height: 44px;
+	color: #161718;
+	text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+	.wrapper {
+    width: 150px;
+		min-width: 150px;
+	}
+
+	.label {
+		font-size: 13px;
+	}
+
+	.value {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.wrapper {
+		width: 90px;
+		min-width: 90px;
+	}
+}

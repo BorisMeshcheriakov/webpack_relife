@@ -1,0 +1,37 @@
+@import 'resources/branding/colors';
+
+.header {
+	display: flex;
+	height: 50px;
+	min-height: 50px;
+	align-items: center;
+	justify-content: center;
+	background-color: $bgrey;
+	border-radius: 4px;
+
+	&__btn {
+		position: absolute;
+		right: 25px;
+		color: $blue;
+	}
+}
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+	.header {
+		&__btn {
+			right: 50px;
+		}
+	}
+}
+
+@media screen and (max-height: 600px) {
+	.header {
+		&__btn {
+			right: 50px;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.tickets {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 123px;
+  height: 40px;
+  padding: 0 14px 0 11px;
+  font-size: 10px;
+  background-color: #fff;
+  color: #616f82;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px rgba(19, 19, 19, 0.1);
+}
+
+.icon {
+  path {
+    fill: #4198c5;
+  }
+}
+
+.dots {
+  position: absolute;
+  right: 0;
+  transform: translateX(66%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 26px;
+}
+
+.dot {
+  width: 9px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #f1f2f3;
+  box-shadow: inset 0px 1px 4px rgba(19, 19, 19, 0.1);
+}

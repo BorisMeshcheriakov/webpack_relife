@@ -1,0 +1,30 @@
+@import 'resources/branding/colors';
+
+.contacts {
+	display: flex;
+  min-width: 335px;
+	.phone {
+		margin-right: 10px;
+		width: 218px;
+	}
+
+	.email {
+		width: 208px !important ;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.contacts {
+		display: flex;
+		flex-direction: column;
+
+		.phone {
+      width: 100%;
+			margin-bottom: 10px;
+		}
+
+		.email {
+      width: 100% !important;
+		}
+	}
+}

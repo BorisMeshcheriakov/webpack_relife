@@ -1,0 +1,11 @@
+export { default as StartDate } from './StartDate';
+export { default as Duration } from './Duration';
+export { default as EventType } from './EventType';
+export { default as Price } from './Price';
+export { default as Place } from './Place';
+export { default as Presenters } from './Presenters';
+export { default as Contacts } from './Contacts';
+export { default as Video } from './Video';
+export { default as CustomBlocks } from './CustomBlocks';
+export { default as VisitorActions } from './VisitorActions';
+export { default as TimeTable } from './TimeTable';

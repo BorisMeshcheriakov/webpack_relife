@@ -1,0 +1,43 @@
+.title {
+	font-family: 'SFPro-Semibold';
+	font-size: 28px;
+	color: #161718;
+	margin-bottom: 35px;
+}
+.content {
+	display: flex;
+	.contact {
+		display: flex;
+		margin-right: 60px;
+		align-items: center;
+		.icon {
+			margin-right: 5px;
+		}
+		.value {
+			color: #161718;
+			font-size: 14px;
+		}
+	}
+}
+
+@media screen and (max-width: 590px) {
+  .title {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+	.content {
+		.contact {
+			margin: 0;
+			flex-grow: 1;
+			min-width: 108px;
+		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+  .content {
+    flex-direction: column;
+    height: 50px;
+    justify-content:space-between;
+  }
+}

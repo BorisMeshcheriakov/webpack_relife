@@ -1,0 +1,12 @@
+@import 'resources/branding/colors';
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	line-height: 17px;
+
+	&.close {
+		color: $dark_grey;
+	}
+}

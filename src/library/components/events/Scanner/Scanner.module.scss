@@ -1,0 +1,23 @@
+.modal {
+	box-sizing: border-box;
+	padding: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 4px;
+	outline: none;
+	background-color: #f1f2f4;
+}
+
+.overlay {
+	background-color: rgba(28, 29, 29, 0.26);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(28, 29, 29, 0.26);
+	z-index: 20;
+	overflow: hidden;
+}

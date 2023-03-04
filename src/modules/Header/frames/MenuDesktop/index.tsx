@@ -6,7 +6,7 @@ import useMenulinks from 'library/hooks/header/useMenuLinks';
 import useUser from 'library/hooks/user/useUser';
 
 import ButtonLogin from 'library/components/header/ButtonLogin';
-//import ButtonSupport from 'library/components/header/ButtonSupport';
+import ButtonSupport from 'library/components/header/ButtonSupport';
 import Profile from './frames/Profile';
 import Logo from 'library/components/header/Logo';
 import ButtonCart from 'library/components/header/ButtonCart';
@@ -53,7 +53,7 @@ const MenuDesktop = () => {
 			</div>
 			<div className={st.menu}>
 				{/* {isAuth && <ButtonNotifications />} */}
-				{/* <ButtonSupport /> */}
+				<ButtonSupport />
 				{isAuth && links.showCart && <ButtonCart />}
 				{isAuth ? <Profile /> : <ButtonLogin />}
 			</div>

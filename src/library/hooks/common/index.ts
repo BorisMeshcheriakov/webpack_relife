@@ -1,6 +1,6 @@
 export * from './reduxTypedHooks';
 // export { default as useErrorHandler } from './useErrorHandler';
-// export { default as useMenu } from './useMenu';
+export { default as useMenu } from './useMenu';
 export { default as useLoadWebSettings } from './useLoadWebSettings';
 export { default as useLoadModules } from './useLoadModules';
 export { default as useWebSettings } from './useWebSettings';

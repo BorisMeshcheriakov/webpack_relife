@@ -3,10 +3,10 @@ import {
 	Header,
 	RootModal,
 	Main,
-	// TechService,
+	TechService,
 	// PaymentListener,
 	Profile,
-	// SupportPage,
+	SupportPage,
 	NotFound,
 	Loading,
 	// Notifications,
@@ -77,8 +77,8 @@ const Routes = () => {
 				)}
 
 				<Route path="/personal" render={() => <Profile />} />
-				{/* <Route path="/support" render={() => <SupportPage />} /> */}
-				{/* <Route exact path="/technical-service" render={() => <TechService />} /> */}
+				<Route path="/support" render={() => <SupportPage />} />
+				<Route exact path="/technical-service" render={() => <TechService />} />
 				{/* <Route path="/payment" exact component={PaymentListener} /> */}
 				{/* <Route exact path="/program-payment" component={ProgramPayment} /> */}
 				{/* <Route path="/notifications" exact render={() => <Notifications />} /> */}

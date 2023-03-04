@@ -1,0 +1,99 @@
+@import 'resources/branding/colors';
+
+.editor {
+	position: relative;
+	padding: 0 20px;
+	height: 100%;
+
+	& > * > fieldset {
+		position: relative;
+		border: none;
+		padding: 0;
+
+		h3 {
+			margin: 30px auto 15px 10px;
+			font-family: 'SFPro-Semibold';
+			font-size: 18px;
+		}
+	}
+}
+
+.head {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 60px;
+  min-width: 335px;
+  transition:0.3s;
+
+	h2 {
+		text-align: center;
+		flex-grow: 1;
+		font-family: 'SFPro-Semibold';
+		font-size: 20px;
+	}
+
+	.submit {
+		position: relative;
+		right: 0;
+		color: #4198c5;
+		min-width: 45px;
+		margin-left: 5px;
+	}
+
+	.close {
+		position: absolute;
+		right: -60px;
+		top: -10px;
+
+		&__btn {
+			color: #fff !important;
+		}
+	}
+}
+
+.scroll {
+	max-height: calc(100% - 60px);
+	min-height: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	.head {
+		.close {
+			width: 40px;
+			height: 40px;
+			position: relative;
+			left: 0;
+			top: 0;
+			margin-left: 10px;
+			border-radius: 50%;
+			background-color: #fff;
+
+			&:hover {
+				background-color: #4198c5 !important;
+				color: #fff !important;
+			}
+
+			&__btn {
+				color: #616f82 !important;
+				&:hover {
+					color: #fff !important;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.head {
+		height: 80px;
+	}
+
+	.scroll {
+		max-height: calc(100% - 80px);
+		// 
+	}
+}

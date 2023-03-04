@@ -1,0 +1,62 @@
+.address {
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__left {
+		flex: 0 1 calc(50% - 5px);
+		display: flex;
+		flex-direction: column;
+
+		& > * {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__right {
+		flex: 0 1 calc(50% - 5px);
+	}
+
+	&__numbers {
+		display: flex;
+		justify-content: space-between;
+
+		& > * {
+			max-width: calc((100% / 3) - 5px);
+		}
+	}
+}
+
+.textarea {
+	.MuiInputBase-root {
+		max-height: 267px;
+		overflow-y: scroll;
+	}
+
+	fieldset {
+		min-height: 267px;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.address {
+		.wrapper {
+			flex-direction: column;
+			padding-bottom: 20px;
+		}
+	}
+
+  .textarea {
+    // .MuiInputBase-root {
+    //   max-height: 267px;
+    //   overflow-y: scroll;
+    // }
+  
+    fieldset {
+      min-height: 147px;
+    }
+  }
+}

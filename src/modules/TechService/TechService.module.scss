@@ -1,0 +1,17 @@
+.root {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	p {
+		margin-bottom: 10px;
+	}
+}

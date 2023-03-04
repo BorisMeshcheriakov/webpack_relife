@@ -1,0 +1,38 @@
+.wrapper {
+	display: flex;
+	border-radius: 4px;
+	overflow: hidden;
+	background: #f8f8fa;
+	box-shadow: 0px 1px 4px rgba(19, 19, 19, 0.1);
+	padding: 12px;
+	min-width: 315px;
+}
+.image {
+	height: 106px;
+	width: 110px;
+	border-radius: 4px;
+	margin: 10px 20px 10px 10px;
+	overflow: hidden;
+	border: 1px solid #e9e9e9;
+	flex-shrink: 0;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: top;
+	}
+}
+.content {
+	.title {
+		font-size: 20px;
+		line-height: 25px;
+		font-family: 'SFPro-Medium';
+		margin-bottom: 15px;
+		margin-top: 12px;
+	}
+	.description {
+		font-size: 14px;
+		line-height: 18px;
+		padding-right: 40px;
+	}
+}

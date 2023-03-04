@@ -1,0 +1,81 @@
+.wrapper {
+	min-width: 315px;
+
+	.title {
+		font-family: 'SFPro-Semibold';
+		font-size: 28px;
+		color: #161718;
+		margin-bottom: 24px;
+	}
+
+	.timeTable {
+		display: flex;
+		box-shadow: 0px 1px 4px rgba(19, 19, 19, 0.1);
+		height: 90px;
+		border-radius: 4px;
+		margin-bottom: 20px;
+
+		.stage {
+			background-color: #ffffff;
+			border-radius: 4px;
+			width: 90px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: #616f82;
+
+			&__index {
+				font-size: 26px;
+				line-height: 30px;
+			}
+		}
+
+		.timeframe {
+			width: 100%;
+			display: flex;
+			padding: 0 23px;
+			align-items: center;
+			background-color: #ffffff;
+			background-image: url('./resources/background.svg');
+			background-size: 31%;
+			background-position: left;
+			background-repeat: no-repeat;
+			border-radius: 4px;
+			font-weight: 700;
+			font-size: 35px;
+			line-height: 45px;
+
+			.date {
+				flex-grow: 1;
+				margin-left: 10px;
+			}
+			.time {
+				margin-left: 100px;
+				flex-grow: 3;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.timeframe {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: 0.3s;
+		font-size: 30px !important;
+		background-size: 41% !important;
+
+		.time {
+			margin: 0 !important;
+		}
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.timeframe {
+		padding: 0 !important;
+		font-size: 26px !important;
+	}
+}
